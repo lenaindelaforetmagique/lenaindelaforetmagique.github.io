@@ -1,0 +1,12 @@
+{
+  "type": "Article",
+  "title": "Paire Noël",
+  "date": "10/01/2019",
+  "author": "Xavier Morin",
+  "URL": "http://lenaindelaforetmagique.github.io/PaireNoel/",
+  "imgURL": "http://lenaindelaforetmagique.github.io/PaireNoel/screenshot.png",
+  "longDescription": ["Un outil de tirage au sort de cadeaux de Noël.",
+    "On cherche à déterminer qui fait un cadeau à qui et l'on veut éviter 'J'ai déjà fait truc l'année dernière ! - Je suis tombé sur mon prénom !'",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  ]
+}

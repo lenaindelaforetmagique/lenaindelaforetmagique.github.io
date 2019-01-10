@@ -1,0 +1,11 @@
+{
+  "type": "ArticleList",
+  "list": [
+    "articles/boids.json",
+    "test_d_erreur_de_fichier.json",
+    "articles/pairenoel.json",
+    "articles/geoproj.json",
+    "articles/spaceship.json",
+    "articles/mastermind.json"
+  ]
+}
