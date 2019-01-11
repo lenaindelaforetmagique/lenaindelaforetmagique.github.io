@@ -1,12 +1,37 @@
 {
   "type": "Article",
-  "title": "Paire Noël",
-  "date": "10/01/2019",
+  "title": "Paire-Noël",
+  "date": "1/12/2018",
   "author": "Xavier Morin",
   "URL": "http://lenaindelaforetmagique.github.io/PaireNoel/",
   "imgURL": "http://lenaindelaforetmagique.github.io/PaireNoel/screenshot.png",
-  "longDescription": ["Un outil de tirage au sort de cadeaux de Noël.",
-    "On cherche à déterminer qui fait un cadeau à qui et l'on veut éviter 'J'ai déjà fait truc l'année dernière ! - Je suis tombé sur mon prénom !'",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  "introduction": "<em>Paire-Noël</em> est un outil de tirage au sort qui pourrait vous aider en cette période de fin d'année.",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Description",
+      "lines": [
+        "Ajoutez des personnes au chapeau, ajoutez des contraintes sur le tirage et obtenez en un clic un tirage de paires « untel doit faire un cadeau à untel ».",
+        "Pour l'instant (et au moins pour cette année), le tirage doit être fait par une main innocente, mais je n'ai pas dit mon dernier mot..."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Motivations",
+      "lines": [
+        "Chaque année dans ma famille, nous mettons dans un chapeau des petits papiers avec nos prénoms écrits dessus et nous tirons au sort le prénom de celui ou celle à qui nous devrons offrir un cadeau à Noël.",
+        "Chaque année il arrive que l'on tombe sur son propre prénom ou sur la même personne que l'année précédente ; il faut alors recommencer le tirage.",
+        "Il fallait que cela cesse."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Technologies mises en œuvre",
+      "lines": [
+        "Le moteur de calcul a été écrit en Python puis transcripté en JavaScript avec <em>Transcrypt</em>.",
+        "Le reste est en HTML/JavaScript/CSS.",
+        "Testé sur :<ul><li>Firefox (v64)</li><li>Chrome (v71)</li><li>iOS Safari (v12)</li></ul>",
+        "Ne fonctionne pas sur Internet Explorer (v11) et Edge (v40)."
+      ]
+    }
   ]
 }

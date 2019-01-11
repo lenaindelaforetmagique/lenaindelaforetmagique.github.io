@@ -5,9 +5,36 @@
   "author": "Xavier Morin",
   "URL": "http://lenaindelaforetmagique.github.io/Boids/",
   "imgURL": "http://lenaindelaforetmagique.github.io/Boids/screenshot.png",
-  "longDescription": ["Ma version du coding challenge 124",
-    "Je suis très content de vous présenter ce projet sur lequel j'ai travaillé pendant quelques semaines. ",
-    "J'aime beaucoup les oiseaux et les obstacles",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  "introduction": "<em>Boids</em> est un simulateur de comportement d'une nuée d'oiseaux en vol.",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Description",
+      "lines": [
+        "Un <em>boid</em> est un automate censé reproduire le comportement d'un oiseau (bird-oid).",
+        "D'après Wikipédia, c'est Craig Reynolds qui en a imaginé les règles en 1986 :",
+        "<ul><li>cohésion : les oiseaux essaient de se rapprocher de leurs voisins.</li><li>séparation : les oiseaux essaient de ne pas se percuter.</li><li>alignement : les oiseaux essaient de voler en formation, dans la même direction.</li></ul>",
+        "De nombreux développeurs se sont prêtés à l'exercice, voici ma version.",
+        "Ajoutez des oiseaux avec la souris. Pour ajouter des obstacles, cliquez sur le sélecteur en haut à gauche."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Motivations",
+      "lines": [
+        "Je tiens l'idée du <a href=\"https://www.youtube.com/watch?v=mhjuuHl6qHM\" target=\"blank\">Coding Challenge #124</a> de Daniel Shiffman.",
+        "J'y ai apporté ma touche en persistant avec le SVG, en définissant moi-même les règles de réaction des oiseaux et en ajoutant des obstacles fixes.",
+        "Le résultat est très relaxant, j'espère que ça vous plaira."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Technologies mises en œuvre",
+      "lines": [
+        "Essentiellement JavaScript et SVG. L'affichage de la page est fait dans une image SVG qui est modifiée dynamiquement par le moteur de calcul écrit en JavaScript.",
+        "Évènements clavier, souris et tactiles.",
+        "Testé sur :<ul><li>Firefox (v64)</li><li>Chrome (v71)</li><li>Edge (v40)</li><li>iOS Safari (v12)</li></ul>",
+        "Ne fonctionne pas sur Internet Explorer (v11)."
+      ]
+    }
   ]
 }

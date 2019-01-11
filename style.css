@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  width: 800px;
+  width: 600px;
   margin: auto;
   font-family: 'Ubuntu Mono', monospace;
   color: white;
@@ -14,7 +14,7 @@ body {
 header {
   height: 120px;
   position: relative;
-  color: gray;
+  color: #444444;
 }
 
 header h1 {
@@ -54,25 +54,77 @@ article {
 
 article h2 {
   border-radius: 5px 5px 0 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   margin: 0px;
-  padding-left: 5px;
-}
-
-article p {
+  padding: 5px;
   padding-left: 10px;
 }
 
-article img {
-  width: 120px;
-  margin: 10px;
-  float: left;
+div.date {
+  /* float: right; */
+  font-size: 85%;
+  /* font-style: italic; */
+  text-align: right;
+  position: relative;
+  top: -15px;
+  right: 5px;
+  overflow: auto;
 }
 
-.command {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 4px;
+article h3 {
+  padding-left: 10px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  color: #444444;
+}
+
+article p {
+  margin: 0 0 10px 0;
+  /* padding-top: 10px; */
+  padding-left: 15px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+article p.error {
   margin: 0;
+  padding: 10px;
+  text-align: justify;
+  color: darkred;
+}
+
+article p.author {
+  text-align: right;
+  font-style: italic;
+}
+
+article img {
+  width: 200px;
+  padding: 0 10px 10px;
+  float: right;
+}
+
+ul, li {
+  text-align: left;
+  padding: 0px 0px 0px 10px;
+  /* padding-left: 20px; */
+  margin: 0px 0px 0px 10px;
+}
+
+a:link {
+  color: #444444;
+}
+
+a:visited {
+  color: #444444;
+}
+
+a:hover {
+  color: #AAAAAA;
+}
+
+a:active {
+  color: #BBBBBB;
 }
 
 footer {

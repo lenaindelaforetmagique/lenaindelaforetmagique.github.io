@@ -1,9 +1,37 @@
 {
   "type": "Article",
   "title": "GeoProj",
-  "date": "10/01/2019",
+  "date": "10/10/2018",
   "author": "Xavier Morin",
   "URL": "http://lenaindelaforetmagique.github.io/Geoproj/",
   "imgURL": "http://lenaindelaforetmagique.github.io/Geoproj/screenshot.png",
-  "longDescription": ["Un joli visualiseur de projections cartographiques","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."]
+  "introduction": "<em>GeoProj</em> est un visualiseur dynamique de projections cartographiques.",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Description",
+      "lines": [
+        "Pour représenter la Terre sur une carte, il est nécessaire de projeter les points de la sphère sur un plan. Il existe à peu près autant de types de projections que de mathématiciens-cartographes. Certaines projections produisent des cartes aux propriétés intéressantes : certaines conservent les formes, d'autres les surfaces ou d'autres encore les longueurs.",
+        "Découvrez le monde sous un autre angle en parcourant différentes projections cartographiques."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Motivations",
+      "lines": [
+        "Depuis longtemps les projections cartographiques m'intéressent. À l'époque où je ne développais que des choses sur Excel en VBA, j'avais d'ailleurs créé un visualiseur un peu rustique.",
+        "Fort de mes récentes expériences avec le SVG, j'ai eu envie de faire quelque chose de joli et de plus « grand ». J'espère que le résultat vous plaira."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Technologies mises en œuvre",
+      "lines": [
+        "Essentiellement JavaScript et SVG. L'affichage de la page est fait dans une image SVG qui est modifiée dynamiquement par le moteur de calcul écrit en JavaScript.",
+        "Récupération des contours GeoJSON des continents via XMLHttpRequest.",
+        "Évènements clavier, souris et tactiles.",
+        "Testé sur :<ul><li>Firefox (v64)</li><li>Chrome (v71)</li><li>Edge (v40)</li><li>iOS Safari (v12)</li></ul>",
+        "Ne fonctionne pas sur Internet Explorer (v11)."
+      ]
+    }
+  ]
 }
