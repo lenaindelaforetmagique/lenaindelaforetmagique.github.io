@@ -1,0 +1,20 @@
+{
+  "type": "Article",
+  "title": "Ceci est mon CV",
+  "date": "10/01/2019",
+  "author": "Xavier Morin",
+  "URL": "",
+  "imgURL": "",
+  "introduction": "Bienvenue sur ma page perso",
+  "content": [{
+    "type": "Paragraph",
+    "title": "Partie 1",
+    "lines": [
+      "Un <em>boid</em> est un automate censé reproduire le comportement d'un oiseau (bird-oid).",
+      "D'après Wikipédia, c'est Craig Reynolds qui en a imaginé les règles en 1986 :",
+      "<ul><li>cohésion : les oiseaux essaient de se rapprocher de leurs voisins.</li><li>séparation : les oiseaux essaient de ne pas se percuter.</li><li>alignement : les oiseaux essaient de voler en formation, dans la même direction.</li></ul>",
+      "De nombreux développeurs se sont prêtés à l'exercice, voici ma version.",
+      "Ajoutez des oiseaux avec la souris. Pour ajouter des obstacles, cliquez sur le sélecteur en haut à gauche."
+    ]
+  }]
+}

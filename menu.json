@@ -1,0 +1,19 @@
+{
+  "type": "Menu",
+  "items": [{
+      "type": "item",
+      "name": "Accueil",
+      "jsonURL": "accueil.json"
+    },
+    {
+      "type": "item",
+      "name": "Blog",
+      "jsonURL": "blog.json"
+    },
+    {
+      "type": "item",
+      "name": "CV",
+      "jsonURL": "cv.json"
+    }
+  ]
+}

@@ -1,7 +1,20 @@
-loadArticle = function(url) {
-  let dom = document.createElement('article');
+loadArticles = function(articlesURL) {
   let main = document.getElementById('main');
-  main.appendChild(dom);
+
+  // clear "main"
+  while (main.firstChild) {
+    main.removeChild(main.firstChild);
+  }
+
+  // load in main
+  for (let url of articlesURL) {
+    loadArticle(url, main);
+  }
+}
+
+loadArticle = function(url, parentDOM) {
+  let dom = document.createElement('article');
+  parentDOM.appendChild(dom);
 
   let requ = new XMLHttpRequest();
   requ.responseType = "json";
@@ -17,7 +30,6 @@ loadArticle = function(url) {
   requ.open('GET', url);
   requ.send();
 }
-
 
 
 
@@ -83,6 +95,4 @@ class Article {
     // this.dom.appendChild(author);
 
   }
-
-
 }

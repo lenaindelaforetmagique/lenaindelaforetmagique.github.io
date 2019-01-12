@@ -36,6 +36,19 @@ header img {
   top: 0;
 }
 
+nav {
+  background: rgba(255, 0, 0, 0.5);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  cursor: pointer;
+}
+
 main {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
