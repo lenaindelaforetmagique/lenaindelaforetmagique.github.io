@@ -44,9 +44,13 @@ function parseHTML(html) {
 class Menu {
   constructor(jsonMenu) {
     this.items = jsonMenu.items;
+
+    this.links = [];
     // console.log(this.items);
     this.show();
-    loadPage(this.items[0].jsonURL);
+    this.links[0].onclick();
+    // loadPage(this.items[0].jsonURL);
+
   }
 
   show() {
@@ -64,11 +68,10 @@ class Menu {
         for (let item of document.getElementsByClassName('selected')) {
           item.setAttribute("class", "");
         }
-
         li.setAttribute("class", "selected");
-        console.log(li);
       }
       a.innerHTML = item.name;
+      this.links.push(a);
       li.appendChild(a);
     }
   }
