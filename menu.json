@@ -7,13 +7,18 @@
     },
     {
       "type": "item",
-      "name": "Blog",
-      "jsonURL": "blog.json"
+      "name": "Geekeries",
+      "jsonURL": "geekeries.json"
     },
     {
       "type": "item",
       "name": "CV",
       "jsonURL": "cv.json"
+    },
+    {
+      "type": "item",
+      "name": "Contact",
+      "jsonURL": "contact.json"
     }
   ]
 }

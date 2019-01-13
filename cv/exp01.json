@@ -1,0 +1,24 @@
+{
+  "type": "Article",
+  "title": "INEXIA - Ingénieur Études Structure",
+  "date": "de septembre 2010 à août 2012",
+  "author": "Xavier Morin",
+  "URL": "",
+  "imgURL": "",
+  "introduction": "Chargé d'affaires Ouvrages d'Art sur la ligne à grande vitesse Tours-Bordeaux (Sud Europe Atlantique).",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Principales tâches",
+      "lines": [
+        "<ul><li>dimensionnement des structures et rédaction de notes de calcul</li><li>développement de programmes de calcul</li><li>suivi de la production des plans</li></ul>"
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Ouvrages principaux",
+      "lines": [
+        "<ul><li>Estacade de la Folie (raccordement de Poitiers)</li><li>ouvrages routiers de type PRAD</li></ul>"
+      ]
+    }
+  ]
+}

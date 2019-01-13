@@ -1,0 +1,31 @@
+{
+  "type": "Article",
+  "title": "Ma formation",
+  "date": "de 2004 à 2010",
+  "author": "Xavier Morin",
+  "URL": "",
+  "imgURL": "",
+  "introduction": "Ci-dessous mon cursur de formation post-bac :",
+  "content": [{
+      "type": "Paragraph",
+      "title": "2009-2010 - CHEBAP",
+      "lines": [
+        "Centre des Hautes Études de la Construction spécialité Béton-Armé Béton-Précontraint"
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "2007-2009 - Master de Génie Civil et Infrastructures",
+      "lines": [
+        "Université de Cergy-Pontoise"
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "2004-2007 - Licence de Mathématiques - Physique",
+      "lines": [
+        "Université de Cergy-Pontoise"
+      ]
+    }
+  ]
+}

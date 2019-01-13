@@ -1,0 +1,24 @@
+{
+  "type": "Article",
+  "title": "Bouygues TP - Ingénieur Études Structure",
+  "date": "de septembre 2012 à octobre 2017",
+  "author": "Xavier Morin",
+  "URL": "",
+  "imgURL": "",
+  "introduction": "",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Principaux projets",
+      "lines": [
+        "<ul><li>LGV Contournement Nîmes-Montpellier : études d'APD de la Tranchée de Manduel et le pont Bowstring sur le Lez</li><li>Hong Kong-Zhuhai-Macao Bridge : études d'EXE des voussoirs sur piles des ponts construits par encorbellement en voussoirs préfabriqués (record de portée : 180m)</li><li>Tuen Mun Chep Lap Kok Link : études d’EXE des rameaux de communication entre deux tunnels routiers sous-marins de 5 km de long à Hong Kong</li><li>Extension en mer de la Principauté de Monaco : études d’APD des caissons formant l’enceinte du remblai.</li></ul>"
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Missions transverses",
+      "lines": [
+        "<ul><li>Contrôle et partage d'outils de calcul</li><li>Développement d'outils de calcul en VBA</li></ul>"
+      ]
+    }
+  ]
+}

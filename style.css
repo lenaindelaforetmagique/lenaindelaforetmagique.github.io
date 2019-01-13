@@ -7,12 +7,13 @@ html {
 body {
   width: 600px;
   margin: auto;
-  font-family: 'Ubuntu Mono', monospace;
+  /* font-family: 'Ubuntu Mono', monospace; */
+  font-family: 'Gentium Book Basic', serif;
   color: white;
 }
 
 header {
-  height: 120px;
+  height: 80px;
   position: relative;
   color: #444444;
 }
@@ -37,14 +38,23 @@ header img {
 }
 
 nav {
-  background: rgba(255, 0, 0, 0.5);
+  background: rgba(0, 0, 90, 0.4);
+  margin: 10px 0 10px 0;
+  border-radius: 5px;
+  /* position: fixed; */
 }
 
 nav ul {
   list-style-type: none;
+  text-align: center;
+  padding: 5px 0 5px;
+  margin: 0;
 }
 
 nav li {
+  padding: 0 10px 0 10px;
+  margin: 0;
+  /* margin: 0 10px 0 10px; */
   display: inline;
   cursor: pointer;
 }
@@ -117,7 +127,7 @@ article img {
   float: right;
 }
 
-ul, li {
+article ul, li {
   text-align: left;
   padding: 0px 0px 0px 10px;
   /* padding-left: 20px; */

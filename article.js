@@ -1,12 +1,6 @@
 loadArticles = function(articlesURL) {
   let main = document.getElementById('main');
 
-  // clear "main"
-  while (main.firstChild) {
-    main.removeChild(main.firstChild);
-  }
-
-  // load in main
   for (let url of articlesURL) {
     loadArticle(url, main);
   }
@@ -62,15 +56,16 @@ class Article {
     date.innerHTML = this.date;
     this.dom.appendChild(date);
 
-    let a_link = document.createElement('a');
-    a_link.setAttribute('href', this.URL);
-    a_link.setAttribute('target', 'blank');
+    if (this.imgURL != "") {
+      let a_link = document.createElement('a');
+      a_link.setAttribute('href', this.URL);
+      a_link.setAttribute('target', 'blank');
 
-    let img = document.createElement('img');
-    img.setAttribute("src", this.imgURL);
-    a_link.appendChild(img);
-    this.dom.appendChild(a_link);
-
+      let img = document.createElement('img');
+      img.setAttribute("src", this.imgURL);
+      a_link.appendChild(img);
+      this.dom.appendChild(a_link);
+    }
     let intro = document.createElement('p');
     intro.innerHTML = this.introduction;
     this.dom.appendChild(intro);

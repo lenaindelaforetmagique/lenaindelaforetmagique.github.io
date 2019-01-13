@@ -1,9 +1,18 @@
 loadPage = function(jsonURL) {
+  let main = document.getElementById('main');
+  // clear "main"
+  while (main.firstChild) {
+    main.removeChild(main.firstChild);
+  }
+
+
   let request = new XMLHttpRequest();
   request.responseType = 'json';
   request.onload = function() {
     if (request.response != null) {
       loadArticles(request.response.articlesURL);
+    } else {
+      // console.log(jsonURL, "inexistant");
     }
   }
   request.open('GET', jsonURL);
@@ -35,7 +44,7 @@ function parseHTML(html) {
 class Menu {
   constructor(jsonMenu) {
     this.items = jsonMenu.items;
-    console.log(this.items);
+    // console.log(this.items);
     this.show();
     loadPage(this.items[0].jsonURL);
   }
@@ -45,10 +54,11 @@ class Menu {
     let ul = document.createElement('ul');
     parentDOM.appendChild(ul);
     for (let item of this.items) {
-      console.log(item);
+      // console.log(item);
       let li = document.createElement('li');
       ul.appendChild(li);
       let a = document.createElement('a');
+      // a.setAttribute('href', '#');
       a.onclick = function() {
         loadPage(item.jsonURL);
       }

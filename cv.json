@@ -1,6 +1,8 @@
 {
   "type": "ArticleCollection",
   "articlesURL": [
-    "cv_article.json"
+    "cv/exp02.json",
+    "cv/exp01.json",
+    "cv/formation.json"
   ]
 }
