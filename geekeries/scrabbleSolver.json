@@ -1,0 +1,35 @@
+{
+  "type": "Article",
+  "title": "ScrabbleSolver",
+  "date": "01/04/2018",
+  "author": "Xavier Morin",
+  "URL": "https://github.com/lenaindelaforetmagique/ScrabbleSolver",
+  "imgURL": "http://lenaindelaforetmagique.github.io/ScrabbleSolver/img/capture06.bmp",
+  "introduction": "<em>Scrabble Solver</em> est un programme qui permet de s'entraîner au Scrabble.",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Description",
+      "lines": [
+        "Le programme permet de jouer au Scrabble en mode <em>Duplicate</em> (le joueur cherche à faire le meilleur coup à chaque tour) mais il fournit également la liste des meilleurs coups jouables.",
+        "Le programme tourne sur toute machine sur laquelle <em>Python</em> est installé, une version web verra probablement le jour.."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Motivations",
+      "lines": [
+        "J'ai toujours rêvé de battre ma Grand-Mère au Scrabble (elle est redoutable !)."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Technologies mises en œuvre",
+      "lines": [
+        "Algorithme de ma composition  ",
+        "Langages : Python + tkinter.",
+        "Évènements clavier souris.",
+        "Testé sur :<ul><li>MacOS X</li><li>Windows 7 et 10</li></ul>"
+      ]
+    }
+  ]
+}

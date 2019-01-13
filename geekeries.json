@@ -5,7 +5,8 @@
     "geekeries/pairenoel.json",
     "geekeries/geoproj.json",
     "geekeries/spaceship.json",
-    "geekeries/mastermind.json"
+    "geekeries/mastermind.json",
+    "geekeries/scrabbleSolver.json"
   ],
   "foo": "test_d_erreur_de_fichier.json"
 }

@@ -44,13 +44,11 @@ function parseHTML(html) {
 class Menu {
   constructor(jsonMenu) {
     this.items = jsonMenu.items;
-
     this.links = [];
     // console.log(this.items);
     this.show();
     this.links[0].onclick();
     // loadPage(this.items[0].jsonURL);
-
   }
 
   show() {
