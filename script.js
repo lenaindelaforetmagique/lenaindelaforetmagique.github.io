@@ -61,6 +61,12 @@ class Menu {
       // a.setAttribute('href', '#');
       a.onclick = function() {
         loadPage(item.jsonURL);
+        for (let item of document.getElementsByClassName('selected')) {
+          item.setAttribute("class", "");
+        }
+
+        li.setAttribute("class", "selected");
+        console.log(li);
       }
       a.innerHTML = item.name;
       li.appendChild(a);

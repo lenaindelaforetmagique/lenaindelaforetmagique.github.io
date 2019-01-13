@@ -1,0 +1,33 @@
+{
+  "type": "Article",
+  "title": "Bouygues TP - Informatique Technique",
+  "date": "de novembre 2017 à aujourd'hui",
+  "author": "Xavier Morin",
+  "URL": "",
+  "imgURL": "",
+  "introduction": "Développeur au service informatique de Bouygues Travaux-Publics.",
+  "content": [{
+      "type": "Paragraph",
+      "title": "SofiFer",
+      "lines": [
+        "Programme de calcul de ferraillage de plaques couplé à Sofistik selon la méthode de Capra-Maury.",
+        "<ul><li>Développement</li><li>Maintenance</li><li>Formation des utilisateurs</li></ul>"
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "SofiCWiC",
+      "lines": [
+        "Programme de calcul d'ouverture de fissures dans les plaques couplé à Sofistik.",
+        "<ul><li>Développement</li><li>Maintenance</li><li>Formation des utilisateurs</li></ul>"
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "FemaSof",
+      "lines": [
+        "Passerelle de conversion de base de calcul Nastran Femap vers Sofistik."
+      ]
+    }
+  ]
+}

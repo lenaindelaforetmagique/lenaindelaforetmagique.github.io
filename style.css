@@ -1,10 +1,11 @@
 html {
-  background-image: linear-gradient(to bottom right, #FEDCBA, #ABCDEF);
+  background-image: linear-gradient(to bottom right, #CCEEFF, #FFDCFE);
   background-attachment: fixed;
   height: 100%;
 }
 
 body {
+  /* width: 100%; */
   width: 600px;
   margin: auto;
   /* font-family: 'Ubuntu Mono', monospace; */
@@ -37,31 +38,41 @@ header img {
   top: 0;
 }
 
-nav {
-  background: rgba(0, 0, 90, 0.4);
-  margin: 10px 0 10px 0;
-  border-radius: 5px;
-  /* position: fixed; */
-}
-
 nav ul {
+  /* background: rgba(0, 0, 90, 0.4); */
+  margin: 10px 0 0 0;
+  /* margin: 10px; */
+  padding: 5px 0px 5px 0;
+  border-radius: 5px 5px 0 0;
+  /* position: fixed; */
   list-style-type: none;
-  text-align: center;
-  padding: 5px 0 5px;
-  margin: 0;
+  text-align: left;
 }
 
 nav li {
-  padding: 0 10px 0 10px;
-  margin: 0;
+  /* padding: 5px 10px 5px 10px; */
+  padding: 5px 15px 5px;
+  /* margin: 5px; */
+  margin: 3px 2px 3px 0px;
   /* margin: 0 10px 0 10px; */
   display: inline;
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px 5px 0 0;
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  /* border-color: gray; */
+}
+
+nav li.selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: gray;
+  font-weight: bold;
 }
 
 main {
   background: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 0 5px 5px 5px;
   overflow: auto;
 }
 
