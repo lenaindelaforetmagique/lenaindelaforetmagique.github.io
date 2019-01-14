@@ -1,0 +1,51 @@
+{
+  "type": "Article",
+  "title": "Dessine-moi un mouton !",
+  "date": "16/04/2018",
+  "author": "Xavier Morin",
+  "URL": "https://lenaindelaforetmagique.github.io/exercicesJS/p5/cycloide_shape/",
+  "imgURL": "https://lenaindelaforetmagique.github.io/exercicesJS/p5/cycloide_shape/screenshot.png",
+  "introduction": "<em>Dessine-moi un mouton !</em> est un petit programme qui essaie de reproduire une forme dessinée à la souris.",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Description",
+      "lines": [
+        "Tracez une forme fermée à la souris (ou à la main si vous êtes sur smartphone) et regardez le programme redessiner la forme avec des <em><a href=\"https://fr.wikipedia.org/wiki/%C3%89picyclo%C3%AFde\" target=\"blank\">épicycloïdes</a></em>."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Un peu de maths",
+      "lines": [
+        "Une forme fermée est un polygone constitué de points (x, y). Comme cette forme est fermée, elle est périodique ; on peut donc chercher sa décomposition en série de Fourier.",
+        "Chaque point est alors vu comme un nombre complexe que l'on cherche à écrire comme la somme de coordonnées de points de cercles.",
+        "Pour une harmonique, on a :",
+        "Hn : x |--> c_n(f)×e^(i×2*π*x/T) + c_-n(f)×e^(-i×2*π*x/T)",
+        "avec : <ul><li>c_k(f) = 1/T×integrale(f(t)×e^(-i×2kπ×t/T)×dt, -T/2, T/2)</li><li>f(t) : la série de points.</li></ul>",
+        "Finalement, on a :<ul><li>f(t) = Sum(Hn(x), n=-∞, n=+∞)</li><li>Hn(x) = c_+n×e^(i×K×x) + c_-n×e^(-i×K×x)</li></ul>",
+        "où :<ul><li>c_+n = r×e^(i×θ)</li><li>c_-n = r'×e^(i×θ')</li><li>K = 2×n×π/T</li></ul>",
+        "On calcule les coefficients complexes de Fourier en intégrant avec la méthode des rectangles :",
+        "c_n(f) = Sum((a_k+i×b_k)×e^(-i×2nπ×k/N), k=0, k=N-1)/N",
+        "avec N = nbre de points",
+        "Chaque coefficient complexe donne un rayon de cercle (son module) et une phase (son argument). La vitesse de rotation de chaque cercle est déterminée par le rang de l'harmonique seule. Pour chaque harmonique on obtient deux cercles de vitesses de rotation opposées.",
+        ""
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Motivations",
+      "lines": [
+        "Je dois l'inspiration de ce petit projet à <a href=\"https://www.youtube.com/watch?v=uazPP0ny3XQ\" target=\"blank\">cette vidéo de El Jj</a>. J'ai été, encore une fois, bluffé par la puissance des mathématiques, il fallait que je m'y frotte !"
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Technologies mises en œuvre",
+      "lines": [
+        "Un poil de HTML et CSS, un peu plus de JavaScript avec la librairie <a href=\"https://p5js.org/\" target=\"blank\">p5.js</a>.",
+        "Testé sur :<ul><li>Firefox (v64)</li><li>Chrome (v71)</li><li>Edge (v40)</li><li>iOS Safari (v12)</li></ul>",
+        "Ne fonctionne pas sur Internet Explorer (v11)."
+      ]
+    }
+  ]
+}

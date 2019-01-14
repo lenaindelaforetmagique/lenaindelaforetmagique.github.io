@@ -1,7 +1,7 @@
 {
   "type": "Article",
   "title": "ScrabbleSolver",
-  "date": "01/04/2018",
+  "date": "27/03/2018",
   "author": "Xavier Morin",
   "URL": "https://github.com/lenaindelaforetmagique/ScrabbleSolver",
   "imgURL": "http://lenaindelaforetmagique.github.io/ScrabbleSolver/img/capture06.bmp",
@@ -25,7 +25,7 @@
       "type": "Paragraph",
       "title": "Technologies mises en œuvre",
       "lines": [
-        "Algorithme de ma composition  ",
+        "Algorithme de ma composition",
         "Langages : Python + tkinter.",
         "Évènements clavier souris.",
         "Testé sur :<ul><li>MacOS X</li><li>Windows 7 et 10</li></ul>"
