@@ -63,6 +63,7 @@ class Article {
 
       let img = document.createElement('img');
       img.setAttribute("src", this.imgURL);
+      img.setAttribute("class", "vignette");
       a_link.appendChild(img);
       this.dom.appendChild(a_link);
     }

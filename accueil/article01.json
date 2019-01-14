@@ -1,0 +1,31 @@
+{
+  "type": "Article",
+  "title": "Bienvenue !",
+  "date": "13/01/2019",
+  "author": "Xavier Morin",
+  "URL": "",
+  "imgURL": "",
+  "introduction": "Bienvenue sur ma page perso ! Vous y trouverez le résultat de mes projets personnels de développement.",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Jeux",
+      "lines": [
+        "Quelques petits jeux ou ébauches de jeux..."
+      ]
+    }, {
+      "type": "Paragraph",
+      "title": "Geekeries",
+      "lines": [
+        "Je revendique l'inutilité de ces productions mais <em>« on ne se bat pas dans l'espoir du succès ! Non ! non, c'est bien plus beau lorsque c'est inutile ! »</em>.",
+        "Certains de ces projets sont des supports d'auto-formation, d'autres sont des manifestations de mes centres d'intérêts."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Qui suis-je ?",
+      "lines": [
+        "Rubrique pa-ssio-nnante."
+      ]
+    }
+  ]
+}

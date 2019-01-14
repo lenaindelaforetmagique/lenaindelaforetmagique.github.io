@@ -12,7 +12,7 @@ loadPage = function(jsonURL) {
     if (request.response != null) {
       loadArticles(request.response.articlesURL);
     } else {
-      // console.log(jsonURL, "inexistant");
+      console.log(jsonURL, "inexistant");
     }
   }
   request.open('GET', jsonURL);

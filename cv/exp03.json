@@ -8,25 +8,27 @@
   "introduction": "Développeur au service informatique de Bouygues Travaux-Publics.",
   "content": [{
       "type": "Paragraph",
-      "title": "SofiFer",
+      "title": "Post-processing avec Sofistik",
       "lines": [
-        "Programme de calcul de ferraillage de plaques couplé à Sofistik selon la méthode de Capra-Maury.",
-        "<ul><li>Développement</li><li>Maintenance</li><li>Formation des utilisateurs</li></ul>"
+        "Développement de programmes de calcul couplés au logiciel <em>Sofistik</em> : calculs de béton armé dans les éléments <em>plaque</em>.",
+        "Mise au point des méthodes de calcul, formation et conseil des utilisateurs",
+        "Langages : C#, VB.NET"
       ]
     },
     {
       "type": "Paragraph",
-      "title": "SofiCWiC",
+      "title": "Scripts Python",
       "lines": [
-        "Programme de calcul d'ouverture de fissures dans les plaques couplé à Sofistik.",
-        "<ul><li>Développement</li><li>Maintenance</li><li>Formation des utilisateurs</li></ul>"
+        "Développement d'utilitaires pour le Bureau d'Études.",
+        "Langages : Python"
       ]
     },
     {
       "type": "Paragraph",
-      "title": "FemaSof",
+      "title": "Administration de la bibliothèque d'outils de calcul",
       "lines": [
-        "Passerelle de conversion de base de calcul Nastran Femap vers Sofistik."
+        "Développement, validation, partage d'outils de calcul sur Excel",
+        "Langages : VBA"
       ]
     }
   ]

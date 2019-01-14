@@ -7,18 +7,18 @@
     },
     {
       "type": "item",
+      "name": "Jeux",
+      "jsonURL": "jeux.json"
+    },
+    {
+      "type": "item",
       "name": "Geekeries",
       "jsonURL": "geekeries.json"
     },
     {
       "type": "item",
-      "name": "CV",
-      "jsonURL": "cv.json"
-    },
-    {
-      "type": "item",
-      "name": "Contact",
-      "jsonURL": "contact.json"
+      "name": "Qui suis-je ?",
+      "jsonURL": "quisuisje.json"
     }
   ]
 }

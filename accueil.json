@@ -1,6 +1,6 @@
 {
   "type": "ArticleCollection",
   "articlesURL": [
-    "accueil_article.json"
+    "accueil/article01.json"
   ]
 }

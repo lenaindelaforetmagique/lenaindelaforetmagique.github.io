@@ -1,0 +1,47 @@
+{
+  "type": "Article",
+  "title": "Qui suis-je ?",
+  "date": "13/01/2019",
+  "author": "Xavier Morin",
+  "URL": "",
+  "imgURL": "",
+  "introduction": "balba",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Comment j'en suis arrivé là",
+      "lines": [
+        "machin et bidule"
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Curiculum Vitæ brevis",
+      "lines": [
+        "depuis novembre 2017 : développeur au service Informatique Technique de Bouygues Travaux-Publics",
+        "09/2012 - 10/2017 : ingénieur études structures au bureau d'études de Bouygues Travaux-Publics",
+        "09/2010 - 08/2012 : ingénieur au département Ouvrages d'Art d'Inexia (devenu Systra)"
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Quelques unes de mes activités sur l'Internet",
+      "lines": [
+        "<ul class=\"listIcon\"><li class=\"listIcon\"><a href=\"https://www.linkedin.com/in/xavier-morin-98275749\" target=\"blank\"><img height=32 src=\"img/linkedin-logo.svg\" title=\"LinkedIn\"></a></li><li class=\"listIcon\"><a href=\"https://github.com/lenaindelaforetmagique\" target=\"blank\"><img height=32 src=\"img/GitHub-Mark-Light-32px.png\" title=\"GitHub\"></a></li><li class=\"listIcon\"><a href=\"https://projecteuler.net/progress=lenain\" target=\"blank\"><img height=32 src=\"https://projecteuler.net/profile/lenain.png\" title=\"Project Euler\"></a></li><li class=\"listIcon\"><a href=\"https://soundcloud.com/user-1663886-334308596\" target=\"blank\"><img height=32 src=\"img/soundcloud-logo.svg\" title=\"SoundCloud\"></a></li></ul>"
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Pour me contacter",
+      "lines": [
+        "initialeDeMonPrénom.monNomDeFamille [at] hotmail.fr"
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Crédits",
+      "lines": [
+        "Certaines icones proviennet made by <a href=\"https://www.flaticon.com/authors/daniel-bruce\" title=\"Daniel Bruce\">Daniel Bruce</a> from <a href=\"https://www.flaticon.com/\" title=\"Flaticon\">www.flaticon.com</a> is licensed by <a href=\"http://creativecommons.org/licenses/by/3.0/\" title=\"Creative Commons BY 3.0\" target=\"_blank\">CC 3.0 BY</a>"
+      ]
+    }
+  ]
+}

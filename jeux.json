@@ -1,0 +1,8 @@
+{
+  "type": "ArticleCollection",
+  "articlesURL": [
+    "jeux/spaceship.json",
+    "jeux/mastermind.json",
+    "jeux/scrabbleSolver.json"
+  ]
+}
