@@ -75,6 +75,7 @@ article {
   margin: 15px;
   padding: 0;
   border-radius: 5px;
+  border-width: 0;
   background: rgba(0, 0, 0, 0.3);
   overflow: auto;
 }
@@ -138,17 +139,6 @@ article ul, article li {
   margin: 0px 0px 0px 0px;
 }
 
-ul.listIcon {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-li.listIcon {
-  display: inline;
-  padding: 2px;
-}
-
 a:link {
   color: #444444;
 }
@@ -167,4 +157,15 @@ a:active {
 
 footer {
   text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  display: inline;
+  padding: 2px;
 }
