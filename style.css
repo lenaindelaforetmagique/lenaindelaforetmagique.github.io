@@ -2,66 +2,61 @@ html {
   background-image: linear-gradient(to bottom right, #CCEEFF, #FFDCFE);
   background-attachment: fixed;
   height: 100%;
+  /* text-align: center; */
 }
 
 body {
-  /* width: 100%; */
   width: 600px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
   /* font-family: 'Ubuntu Mono', monospace; */
   font-family: 'Gentium Book Basic', serif;
   color: white;
 }
 
 header {
-  height: 80px;
+  margin: 0;
+  padding: 0;
   position: relative;
   color: #444444;
 }
 
 header h1 {
   margin: 0;
-  padding: 0;
-  padding-top: 30px;
+  padding: 30px 0 0 0;
+  font-size: 32px;
 }
 
 header p {
   margin: 0;
-  padding-left: 20px;
-  font-size: 80%;
+  padding: 0 0 0 20px;
+  font-size: 14px;
   font-style: italic;
 }
 
-header img {
+/* header img {
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 0;
-}
-
+} */
 nav ul {
-  /* background: rgba(0, 0, 90, 0.4); */
   margin: 10px 0 0 0;
-  /* margin: 10px; */
   padding: 5px 0px 5px 0;
-  border-radius: 5px 5px 0 0;
+  border-width: 0;
   /* position: fixed; */
   list-style-type: none;
   text-align: left;
+  font-size: 16px;
 }
 
 nav li {
-  /* padding: 5px 10px 5px 10px; */
-  padding: 5px 15px 5px;
-  /* margin: 5px; */
   margin: 3px 2px 3px 0px;
-  /* margin: 0 10px 0 10px; */
+  padding: 5px 15px 5px 15px;
+  border-width: 0;
+  border-radius: 5px 5px 0 0;
+  background-color: rgba(0, 0, 0, 0.3);
   display: inline;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 5px 5px 0 0;
-  /* border-style: solid; */
-  /* border-width: 1px; */
-  /* border-color: gray; */
 }
 
 nav li.selected {
@@ -77,32 +72,29 @@ main {
 }
 
 article {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  font-size: 80%;
-  overflow: auto;
   margin: 15px;
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
+  padding: 0;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: auto;
 }
 
 article h2 {
+  margin: 0px;
+  padding: 5px 5px 5px 10px;
   border-radius: 5px 5px 0 0;
   background: rgba(0, 0, 0, 0.3);
-  margin: 0px;
-  padding: 5px;
-  padding-left: 10px;
+  font-size: 19px;
 }
 
 div.date {
-  /* float: right; */
-  font-size: 85%;
-  /* font-style: italic; */
   text-align: right;
   position: relative;
   top: -15px;
   right: 5px;
   overflow: auto;
+  /* font-style: italic; */
+  font-size: 13px;
 }
 
 article h3 {
@@ -110,6 +102,7 @@ article h3 {
   padding-bottom: 0;
   margin-bottom: 5px;
   color: #444444;
+  font-size: 16px;
 }
 
 article p {
@@ -118,6 +111,7 @@ article p {
   padding-left: 15px;
   padding-right: 10px;
   text-align: justify;
+  font-size: 13px;
 }
 
 article p.error {
@@ -134,30 +128,25 @@ article p.author {
 
 article img.vignette {
   width: 200px;
-  padding: 0 10px 10px;
+  padding: 0 10px 10px 10px;
   float: right;
 }
 
-article ul, li {
+article ul, article li {
   text-align: left;
   padding: 0px 0px 0px 10px;
-  /* padding-left: 20px; */
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 0px;
 }
 
-article ul.listIcon {
-  /* background: rgba(0, 0, 90, 0.4); */
-  /* margin: 10px 0 0 0; */
-  /* margin: 10px; */
-  /* padding: 5px 0px 5px 0; */
-  /* border-radius: 5px 5px 0 0; */
-  /* position: fixed; */
+ul.listIcon {
   list-style-type: none;
-  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
-article li.listIcon {
+li.listIcon {
   display: inline;
+  padding: 2px;
 }
 
 a:link {
@@ -169,7 +158,7 @@ a:visited {
 }
 
 a:hover {
-  color: #AAAAAA;
+  color: #BBBBBB;
 }
 
 a:active {
