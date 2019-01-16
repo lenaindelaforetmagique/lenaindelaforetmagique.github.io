@@ -175,3 +175,39 @@ footer li {
   display: inline;
   padding: 2px;
 }
+
+/* footer img:hover {
+  height: 30px;
+  border-color: blue;
+  border-width: 2px;
+  border-style: double;
+} */
+svg :hover {
+  fill: red;
+}
+
+#github {
+  display: inline-block;
+  background: url("img/github-logo.svg");
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+#github:hover {
+  background: url("img/github-logo-gray.svg");
+  background-size: 24px;
+}
+
+#linkedin {
+  display: inline-block;
+  background: url("img/linkedin-logo.svg");
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+#linkedin:hover {
+  background: url("img/linkedIn-logo-gray.svg");
+  background-size: 24px;
+}
