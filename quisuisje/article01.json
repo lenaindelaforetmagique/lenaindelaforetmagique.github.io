@@ -8,26 +8,55 @@
   "introduction": "Puissent ces quelques lignes vous en dire un peu plus sur moi...",
   "content": [{
       "type": "Paragraph",
-      "title": "Comment j'en suis arrivé là",
-      "lines": [
-        "machin et bidule"
-      ]
-    },
-    {
-      "type": "Paragraph",
       "title": "Curiculum Vitæ brevis",
       "lines": [
         "Après avoir suivi une formation scientifique dans le domaine de la construction, j'ai travaillé pendant 7 ans en bureau d'études structures de plusieurs entreprises sur des grands projets de génie civil.",
         "Depuis fin 2017, j'ai changé d'activité principale en passant de développeur en <em>temps masqué</em> à developpeur à <em>temps plein</em>, essentiellement en développant des programmes de calcul pour le bureau d'études de mon entreprise.",
-        "Pour plus de détails, mon profil LinkedIn est censé être à jour..."
+        "Pour plus de détails, <a href=\"https://www.linkedin.com/in/xavier-morin-98275749\" target=\"_blank\">mon profil LinkedIn</a> est censé être à jour..."
+      ]
+    }, {
+      "type": "Paragraph",
+      "title": "Comment j'en suis arrivé là",
+      "lines": [
+        "Ma première ligne de code remonte à l'age de treize ans sur le vieil ordinateur familial (Windows 3.1) sur lequel j'avais programmé en BASIC le fameux jeu <em>Trouvez un nombre entre 1 et 100</em>.",
+        "Peu de temps après, l'apparition des calculatrices graphiques programmables dans ma vie m'a donné l'occasion de re-programmer de nombreux jeux ou des petits programmes de calcul.",
+        "Arrivé au lycée, c'est l'époque de l'explosion d'Internet, je me lance dans la création de nombreux sites web pour moi mais aussi pour des amis musiciens. Ma plus grosse réussite reste le site du groupe de musique <em>Vegastar</em> qui a connu une certaine notoriété...",
+        "À l'université, je m'arrache les cheveux avec des premiers cours sérieux de programmation en <em>OCaml</em> et délaisse tout type de programmation pendant 2 ans. Mais un cours de <em>Modélisation de systèmes physiques</em> m'offre l'occasion d'apprendre le <em>C</em> et de coder quelques jolis programmes dont une modélisation physique et graphique du Sytème Solaire. Il y a des maths, de la physique et un rendu visuel : tout pour me plaire.",
+        "Pendant mes stages en entreprise, je découvre le <em>VBA</em> qui, malgré de nombreux défauts, a l'avantage d'être interfacé avec Excel, compagnon universel dans l'ingénierie. Je me lance alors dans le projet sans fin d'automatiser un maximum de tâches pénibles.",
+        "Une fois dans la vie « active », je découvre l'existence du <em>Projet Euler</em> (un très bon site d'énigmes mathématiques à résoudre avec l'ordinateur) et me remets à programmer en <em>C</em> puis en <em>lua</em>. La légèreté syntaxique du <em>lua</em> met permet de me consacrer davantage au problème mathématique plutôt qu'aux problèmes de compilation.",
+        "Passent quelques années bien occupées par mon travail en bureau d'études ; point alors l'envie de changer d'activité et la découverte du <em>Python</em> me remet dans le bain de la programmation.",
+        "Saisissant une opportunité au sein de mon entreprise, je rejoins le service de développement scientifique pour y développer des programmes de calcul pour mes anciens collègues. L'essentiel du travail est en <em>C#</em> et <em>VB.NET</em>.",
+        "À l'affut de curiosités scientifiques et informatiques, je m'essaie au développement web (<em>HTML/CSS/JavaScript</em>) avec cette modeste page personnelle qui regroupe l'ensemble de mes projets personnels dignes d'intérêt..."
+      ]
+    },
+
+    {
+      "type": "Paragraph",
+      "title": "Langages pratiqués",
+      "lines": [{
+          "type": "List",
+          "style": "",
+          "items": [
+            "Oubliés : BASIC, Casio-Basic, TI-Basic",
+            "En cours d'oubli : C, lua",
+            "Couramment utilisés : C#, VB.NET, VBA, Python, HTML/CSS/JavaScript"
+          ]
+        }
+
       ]
     },
     {
       "type": "Paragraph",
       "title": "Quelques unes de mes activités sur l'Internet",
-      "lines": [
-        "<a href=\"https://projecteuler.net/progress=lenain\" target=\"blank\"><img height=32 src=\"https://projecteuler.net/profile/lenain.png\" title=\"Project Euler\"></a>"
-      ]
+      "lines": [{
+        "type": "List",
+        "style": "inline",
+        "items": [
+          "<a href=\"https://github.com/lenaindelaforetmagique\" target=\"_blank\"><img height=32 src=\"img/github-logo.svg\" title=\"Visitez ma page GitHub\" onmouseover=\"this.src='img/github-logo-gray.svg';\" onmouseout=\"this.src='img/github-logo.svg';\"></a>",
+          "<a href=\"https://projecteuler.net/progress=lenain\" target=\"blank\"><img height=32 src=\"https://projecteuler.net/profile/lenain.png\" title=\"Project Euler\"></a>",
+          "<a href=\"https://soundcloud.com/user-1663886-334308596\" target=\"_blank\"><img height=32 src=\"img/soundcloud-logo.svg\" title=\"Visitez ma page SoundCloud\" onmouseover=\"this.src='img/soundcloud-logo-gray.svg';\" onmouseout=\"this.src='img/soundcloud-logo.svg';\"></a>"
+        ]
+      }]
     },
     {
       "type": "Paragraph",

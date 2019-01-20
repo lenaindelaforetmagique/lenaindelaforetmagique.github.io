@@ -1,8 +1,8 @@
 class Article {
-  constructor(jsonURL, parentDOM) {
+  constructor(jsonURL, parent) {
     this.dom = document.createElement('article');
-    parentDOM.appendChild(this.dom);
-
+    parent.dom.appendChild(this.dom);
+    this.parent = parent;
     this.title = "";
     this.date = "";
     this.author = "";
@@ -24,6 +24,7 @@ class Article {
         thiz.introduction = requ.response.introduction;
         thiz.content = requ.response.content;
         thiz.show();
+        thiz.parent.parent.addArticle();
       } else {
         this.dom.innerHTML = "<p class=\"error\">L'article <em>" + url + "</em> n'a pas pu être chargé correctement...</p>";
       }
@@ -43,6 +44,7 @@ class Article {
     this.dom.appendChild(date);
 
     if (this.imgURL != "") {
+      let p_ = document.createElement('p');
       let a_link = document.createElement('a');
       a_link.setAttribute('href', this.URL);
       a_link.setAttribute('target', 'blank');
@@ -51,8 +53,10 @@ class Article {
       img.setAttribute("src", this.imgURL);
       img.setAttribute("class", "vignette");
       a_link.appendChild(img);
-      this.dom.appendChild(a_link);
+      p_.appendChild(a_link);
+      this.dom.appendChild(p_);
     }
+
     let intro = document.createElement('p');
     intro.innerHTML = this.introduction;
     this.dom.appendChild(intro);
@@ -66,7 +70,18 @@ class Article {
 
       for (let line of para.lines) {
         let domLine = document.createElement('p');
-        domLine.innerHTML = line;
+        if (typeof line == "string") {
+          domLine.innerHTML = line;
+        } else if (line.type == "List") {
+          let ul = document.createElement('ul');
+          ul.setAttribute("class", line.style);
+          domLine.appendChild(ul);
+          for (let item of line.items) {
+            let li = document.createElement('li');
+            li.innerHTML = item;
+            ul.appendChild(li);
+          }
+        }
         this.dom.appendChild(domLine);
       }
 

@@ -1,5 +1,8 @@
+//////////////////////////////////////////////////////////////////////////////
+
 class PageContent {
-  constructor(jsonURL) {
+  constructor(jsonURL, parent_) {
+    this.parent = parent_;
     this.articlesURL = [];
     this.articles = [];
     this.dom = document.getElementById('main');
@@ -16,7 +19,7 @@ class PageContent {
       if (request.response != null) {
         thiz.articlesURL = request.response.articlesURL;
         // while (thiz.loadArticle()) {}
-        thiz.loadArticle();
+        thiz.parent.addArticle();
       } else {
         console.log(jsonURL, " inexistant !");
       }
@@ -30,7 +33,7 @@ class PageContent {
     let totalCount = this.articlesURL.length;
 
     if (loadedCount < totalCount) {
-      this.articles.push(new Article(this.articlesURL[loadedCount], this.dom));
+      this.articles.push(new Article(this.articlesURL[loadedCount], this));
       return true;
     } else {
       return false;
@@ -91,6 +94,7 @@ class PageStructure {
   constructor(jsonMenuURL) {
     this.menu = new Menu(jsonMenuURL, this);
     this.currentPageContent = null;
+    this.footer = document.getElementById("footer");
 
     this.prevPageYOffset = 0;
     this.bottomCount = 0;
@@ -106,52 +110,49 @@ class PageStructure {
       thiz.handle_onwheel(e);
     }
 
+    document.onscroll = function(e) {
+      thiz.handle_onwheel(e);
+    }
     document.addEventListener("touchmove", function(e) {
-      // console.log(e);
       thiz.handle_touchmove(e)
     })
 
   }
 
   loadPageContent(jsonURL) {
-    this.currentPageContent = new PageContent(jsonURL);
+    this.currentPageContent = new PageContent(jsonURL, this);
   }
 
   addArticle() {
-    this.currentPageContent.loadArticle();
+    let bool = true;
+    if (bool && (window.pageYOffset + window.innerHeight > this.footer.offsetTop)) {
+      bool = this.currentPageContent.loadArticle();
+    }
   }
 
   handle_touchmove(e) {
-    let posY = 0;
-    for (let touch of e.touches) {
-      posY += touch.clientY;
-    }
-    posY /= e.touches.length;
-    let deltaY = this.prevPosY - posY;
-    if (this.prevPosY - posY > 0) {
-      this.addArticle();
-    }
-    // this.handle_onwheel(e)
-    this.prevPosY = posY;
+    // this.addArticle();
   }
 
   handle_onwheel(e) {
-    console.log(this.bottomCount);
-    if (e.deltaY > 0) {
-      // console.log("descente");
-      if (window.pageYOffset == this.prevPageYOffset) {
-        // console.log("haha");
-        this.bottomCount += 1;
-        if (this.bottomCount > 30) {
-          this.addArticle();
-          this.bottomCount = 0;
-        }
-      }
-    } else {
-      // console.log("montee");
-      this.bottomCount = 0;
-    }
-    this.prevPageYOffset = window.pageYOffset;
+    this.addArticle();
+    //
+    // // console.log(this.bottomCount);
+    // if (e.deltaY > 0) {
+    //   // console.log("descente");
+    //   if (window.pageYOffset == this.prevPageYOffset) {
+    //     // console.log("haha");
+    //     this.bottomCount += 1;
+    //     if (this.bottomCount > 30) {
+    //       this.addArticle();
+    //       this.bottomCount = 0;
+    //     }
+    //   }
+    // } else {
+    //   // console.log("montee");
+    //   this.bottomCount = 0;
+    // }
+    // this.prevPageYOffset = window.pageYOffset;
   }
 }
 

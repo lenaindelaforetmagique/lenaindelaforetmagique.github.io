@@ -1,9 +1,3 @@
-@media screen and (max-device-width: 480px) {
-  body {
-    -webkit-text-size-adjust: none;
-  }
-}
-
 html {
   background-image: linear-gradient(to bottom right, #CCEEFF, #FFDCFE);
   background-attachment: fixed;
@@ -13,8 +7,8 @@ html {
 
 body {
   width: 600px;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0px auto;
+  padding: 5px;
   /* font-family: 'Ubuntu Mono', monospace; */
   font-family: 'Gentium Book Basic', serif;
   color: white;
@@ -116,7 +110,7 @@ article p {
   margin: 0 0 10px 0;
   /* padding-top: 10px; */
   padding-left: 15px;
-  padding-right: 10px;
+  padding-right: 15px;
   text-align: justify;
   font-size: 13px;
 }
@@ -143,6 +137,23 @@ article ul, article li {
   text-align: left;
   padding: 0px 0px 0px 10px;
   margin: 0px 0px 0px 0px;
+}
+
+article ul.inline {
+  /* margin: 10px 0 0 0; */
+  /* padding: 5px 0px 5px 0; */
+  /* border-width: 0; */
+  /* position: fixed; */
+  list-style-type: none;
+  text-align: center;
+  /* font-size: 16px; */
+}
+
+article ul.inline li {
+  display: inline;
+  /* text-align: center; */
+  /* padding: 0px 0px 0px 10px; */
+  /* margin: 0px 0px 0px 0px; */
 }
 
 a:link {
@@ -186,28 +197,49 @@ svg :hover {
   fill: red;
 }
 
-#github {
-  display: inline-block;
-  background: url("img/github-logo.svg");
-  background-size: 24px;
+.footer {
+  /* display: inline-block; */
+  /* background: url("img/linkedin-logo.svg"); */
+  /* background-size: 24px; */
   width: 24px;
   height: 24px;
 }
 
-#github:hover {
-  background: url("img/github-logo-gray.svg");
-  background-size: 24px;
-}
+@media screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: none;
+    width: 100%;
+  }
 
-#linkedin {
-  display: inline-block;
-  background: url("img/linkedin-logo.svg");
-  background-size: 24px;
-  width: 24px;
-  height: 24px;
-}
+  nav ul {
+    /* margin: 10px 0 0 0; */
+    /* padding: 5px 0px 5px 0; */
+    /* border-width: 0; */
+    /* position: fixed; */
+    /* list-style-type: none; */
+    /* text-align: left; */
+    font-size: 12px;
+  }
 
-#linkedin:hover {
-  background: url("img/linkedin-logo-gray.svg");
-  background-size: 24px;
+  article img.vignette {
+    float: none;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* width: 200px; */
+    /* margin: 0 15% 0 15%; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* align-self: center; */
+    padding: 0 0 0 0;
+    /* float: none; */
+    /* padding: 0; */
+    /* align-items: center; */
+    /* align-self: center; */
+    /* margin: auto; */
+    /* padding: auto; */
+    /* float: left; */
+  }
 }
