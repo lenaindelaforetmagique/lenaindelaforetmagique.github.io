@@ -1,0 +1,176 @@
+html {
+  height: 100%;
+}
+
+body {
+  width: 600px;
+  margin: 0px auto;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  padding: 30px 0 0 0;
+  font-size: 32px;
+}
+
+header p {
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* header img {
+  position: absolute;
+  right: 0;
+  top: 0;
+} */
+nav ul {
+  margin: 10px 0 0 0;
+  padding: 5px 0px 5px 0;
+  border-width: 0;
+  /* position: fixed; */
+  list-style-type: none;
+  text-align: left;
+  font-size: 16px;
+}
+
+nav li {
+  margin: 3px 2px 3px 0px;
+  padding: 5px 15px 5px 15px;
+  border-width: 0;
+  border-radius: 5px 5px 0 0;
+  display: inline;
+}
+
+nav li.selected {
+  font-weight: bold;
+}
+
+main {
+  border-radius: 0 5px 5px 5px;
+  overflow: auto;
+}
+
+article {
+  margin: 15px;
+  padding: 0;
+  border-radius: 5px;
+  border-width: 0;
+  overflow: auto;
+}
+
+article h2 {
+  margin: 0px;
+  padding: 5px 5px 5px 10px;
+  border-radius: 5px 5px 0 0;
+  font-size: 19px;
+}
+
+div.date {
+  text-align: right;
+  position: relative;
+  top: -15px;
+  right: 5px;
+  overflow: auto;
+  /* font-style: italic; */
+  font-size: 13px;
+}
+
+article h3 {
+  padding-left: 10px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+article p {
+  margin: 0 0 10px 0;
+  /* padding-top: 10px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: justify;
+  font-size: 13px;
+}
+
+article p.error {
+  margin: 0;
+  padding: 10px;
+  text-align: justify;
+}
+
+article p.author {
+  text-align: right;
+  font-style: italic;
+}
+
+article img.vignette {
+  width: 200px;
+  padding: 0 10px 10px 10px;
+  float: right;
+}
+
+article ul, article li {
+  text-align: left;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 8px;
+}
+
+article ul.inline {
+  list-style-type: none;
+  text-align: center;
+}
+
+article ul.inline li {
+  display: inline;
+}
+
+footer {
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  display: inline;
+  padding: 2px;
+}
+
+.footer {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: none;
+    width: 98%;
+  }
+
+  nav ul {
+    font-size: 12px;
+  }
+
+  article img.vignette {
+    float: none;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0 0 0 0;
+  }
+
+  article {
+    margin: 8px;
+  }
+}

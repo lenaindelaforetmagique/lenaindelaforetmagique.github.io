@@ -1,17 +1,16 @@
 html {
-  background-image: linear-gradient(to bottom right, #CCEEFF, #FFDCFE);
-  background-attachment: fixed;
+  background-color: #eee8d5;
 }
 
 body {
   /* font-family: 'Gentium Book Basic', serif; */
   font-family: 'Overlock', cursive;
-  color: white;
+  color: #black;
 }
 
 header {
   font-family: 'Fredericka the Great', cursive;
-  color: #444444;
+  color: #002b36;
 }
 
 nav ul {
@@ -24,16 +23,16 @@ nav li {
 }
 
 nav li.selected {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: gray;
+  background-color: #073642;
+  color: #586e75;
 }
 
 main {
-  background: rgba(0, 0, 0, 0.1);
+  background: #073642;
 }
 
 article {
-  background: rgba(0, 0, 0, 0.3);
+  background: #fdf6e3;
 }
 
 article h2 {
