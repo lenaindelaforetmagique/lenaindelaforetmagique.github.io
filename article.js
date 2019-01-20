@@ -1,49 +1,35 @@
-loadArticles = function(articlesURL) {
-  let main = document.getElementById('main');
-
-  for (let url of articlesURL) {
-    loadArticle(url, main);
-  }
-}
-
-loadArticle = function(url, parentDOM) {
-  let dom = document.createElement('article');
-  parentDOM.appendChild(dom);
-
-  let requ = new XMLHttpRequest();
-  requ.responseType = "json";
-  requ.onload = function() {
-    if (requ.response != null) {
-      let article = new Article(requ.response, dom);
-      article.show();
-    } else {
-      dom.innerHTML = "<p class=\"error\">L'article <em>" + url + "</em> n'a pas pu être chargé correctement...</p>";
-
-    }
-  };
-  requ.open('GET', url);
-  requ.send();
-}
-
-
-
 class Article {
-  constructor(data, dom_) {
-    this.dom = dom_;
-    this.title = data.title;
-    this.date = data.date;
-    this.author = data.author;
-    this.URL = data.URL;
-    this.imgURL = data.imgURL;
-    this.introduction = data.introduction;
-    this.content = data.content;
-    // Structure of longDescription
-    // for (let par of this.longDescription) {
-    //   console.log(par.title);
-    //   for (let line of par.lines) {
-    //     console.log("*" + line);
-    //   }
-    // }
+  constructor(jsonURL, parentDOM) {
+    this.dom = document.createElement('article');
+    parentDOM.appendChild(this.dom);
+
+    this.title = "";
+    this.date = "";
+    this.author = "";
+    this.URL = "";
+    this.imgURL = "";
+    this.introduction = "";
+    this.content = "";
+
+    let thiz = this;
+    let requ = new XMLHttpRequest();
+    requ.responseType = "json";
+    requ.onload = function() {
+      if (requ.response != null) {
+        thiz.title = requ.response.title;
+        thiz.date = requ.response.date;
+        thiz.author = requ.response.author;
+        thiz.URL = requ.response.URL;
+        thiz.imgURL = requ.response.imgURL;
+        thiz.introduction = requ.response.introduction;
+        thiz.content = requ.response.content;
+        thiz.show();
+      } else {
+        this.dom.innerHTML = "<p class=\"error\">L'article <em>" + url + "</em> n'a pas pu être chargé correctement...</p>";
+      }
+    };
+    requ.open('GET', jsonURL);
+    requ.send();
   }
 
   show() {

@@ -1,57 +1,67 @@
-loadPage = function(jsonURL) {
-  let main = document.getElementById('main');
-  // clear "main"
-  while (main.firstChild) {
-    main.removeChild(main.firstChild);
+class PageContent {
+  constructor(jsonURL) {
+    this.articlesURL = [];
+    this.articles = [];
+    this.dom = document.getElementById('main');
+    // clear "main"
+    while (this.dom.firstChild) {
+      this.dom.removeChild(this.dom.firstChild);
+    }
+
+    let thiz = this;
+    // Load jsonURL content
+    let request = new XMLHttpRequest();
+    request.responseType = 'json';
+    request.onload = function() {
+      if (request.response != null) {
+        thiz.articlesURL = request.response.articlesURL;
+        // while (thiz.loadArticle()) {}
+        thiz.loadArticle();
+      } else {
+        console.log(jsonURL, " inexistant !");
+      }
+    }
+    request.open('GET', jsonURL);
+    request.send();
   }
 
+  loadArticle() {
+    let loadedCount = this.articles.length;
+    let totalCount = this.articlesURL.length;
 
-  let request = new XMLHttpRequest();
-  request.responseType = 'json';
-  request.onload = function() {
-    if (request.response != null) {
-      loadArticles(request.response.articlesURL);
+    if (loadedCount < totalCount) {
+      this.articles.push(new Article(this.articlesURL[loadedCount], this.dom));
+      return true;
     } else {
-      console.log(jsonURL, "inexistant");
+      return false;
     }
   }
-  request.open('GET', jsonURL);
-  request.send();
 }
 
-loadMenu = function(jsonURL) {
-  let menu = null;
-  let request = new XMLHttpRequest();
-  request.responseType = 'json';
-  request.onload = function() {
-    if (request.response != null) {
-      menu = new Menu(request.response);
-    }
-  }
-  request.open('GET', jsonURL);
-  request.send();
-}
-
-loadMenu("menu.json");
-
-function parseHTML(html) {
-  var t = document.createElement('template');
-  t.innerHTML = html;
-  return t.content.cloneNode(true);
-}
-
+///////////////////////////////////////////////////////////////////////////////
 
 class Menu {
-  constructor(jsonMenu) {
-    this.items = jsonMenu.items;
+  constructor(jsonMenuURL, parent_) {
+    this.parent = parent_;
+    this.items = null;
     this.links = [];
-    // console.log(this.items);
-    this.show();
-    this.links[0].onclick();
-    // loadPage(this.items[0].jsonURL);
+
+    let thiz = this;
+    let request = new XMLHttpRequest();
+    request.responseType = 'json';
+    request.onload = function() {
+      if (request.response != null) {
+        thiz.items = request.response.items;
+        thiz.show();
+        thiz.links[0].onclick();
+      }
+    }
+    request.open('GET', jsonMenuURL);
+    request.send();
   }
 
   show() {
+    let thiz = this;
     let parentDOM = document.getElementById('nav');
     let ul = document.createElement('ul');
     parentDOM.appendChild(ul);
@@ -62,7 +72,7 @@ class Menu {
       let a = document.createElement('a');
       // a.setAttribute('href', '#');
       a.onclick = function() {
-        loadPage(item.jsonURL);
+        thiz.parent.loadPageContent(item.jsonURL);
         for (let item of document.getElementsByClassName('selected')) {
           item.setAttribute("class", "");
         }
@@ -74,3 +84,76 @@ class Menu {
     }
   }
 }
+
+///////////////////////////////////////////////////////////////////////////////
+
+class PageStructure {
+  constructor(jsonMenuURL) {
+    this.menu = new Menu(jsonMenuURL, this);
+    this.currentPageContent = null;
+
+    this.prevPageYOffset = 0;
+    this.bottomCount = 0;
+    let thiz = this;
+    //
+    // document.addEventListener("mousedown", function(e) {
+    //   e.preventDefault();
+    //   console.log(e);
+    //   thiz.addArticle();
+    // });
+
+    document.onwheel = function(e) {
+      thiz.handle_onwheel(e);
+    }
+
+    document.addEventListener("touchmove", function(e) {
+      // console.log(e);
+      thiz.handle_touchmove(e)
+    })
+
+  }
+
+  loadPageContent(jsonURL) {
+    this.currentPageContent = new PageContent(jsonURL);
+  }
+
+  addArticle() {
+    this.currentPageContent.loadArticle();
+  }
+
+  handle_touchmove(e) {
+    let posY = 0;
+    for (let touch of e.touches) {
+      posY += touch.clientY;
+    }
+    posY /= e.touches.length;
+    let deltaY = this.prevPosY - posY;
+    if (this.prevPosY - posY > 0) {
+      this.addArticle();
+    }
+    // this.handle_onwheel(e)
+    this.prevPosY = posY;
+  }
+
+  handle_onwheel(e) {
+    console.log(this.bottomCount);
+    if (e.deltaY > 0) {
+      // console.log("descente");
+      if (window.pageYOffset == this.prevPageYOffset) {
+        // console.log("haha");
+        this.bottomCount += 1;
+        if (this.bottomCount > 30) {
+          this.addArticle();
+          this.bottomCount = 0;
+        }
+      }
+    } else {
+      // console.log("montee");
+      this.bottomCount = 0;
+    }
+    this.prevPageYOffset = window.pageYOffset;
+  }
+}
+
+
+let pageStructure = new PageStructure("menu.json");
