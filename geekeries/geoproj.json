@@ -29,7 +29,17 @@
         "Essentiellement JavaScript et SVG. L'affichage de la page est fait dans une image SVG qui est modifiée dynamiquement par le moteur de calcul écrit en JavaScript.",
         "Récupération des contours GeoJSON des continents via XMLHttpRequest.",
         "Évènements clavier, souris et tactiles.",
-        "Testé sur :<ul><li>Firefox (v64)</li><li>Chrome (v71)</li><li>Edge (v40)</li><li>iOS Safari (v12)</li></ul>",
+        "Testé sur :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "Firefox (v64)",
+            "Chrome (v71)",
+            "Edge (v40)",
+            "iOS Safari (v12)"
+          ]
+        },
         "Ne fonctionne pas sur Internet Explorer (v11)."
       ]
     }

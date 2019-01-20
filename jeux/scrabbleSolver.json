@@ -28,7 +28,15 @@
         "Algorithme de ma composition",
         "Langages : Python + tkinter.",
         "Évènements clavier souris.",
-        "Testé sur :<ul><li>MacOS X</li><li>Windows 7 et 10</li></ul>"
+        "Testé sur :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "MacOS X",
+            "Windows 7 et 10"
+          ]
+        }
       ]
     }
   ]

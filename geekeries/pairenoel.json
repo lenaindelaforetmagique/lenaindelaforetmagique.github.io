@@ -29,7 +29,16 @@
       "lines": [
         "Le moteur de calcul a été écrit en Python puis transcripté en JavaScript avec <em>Transcrypt</em>.",
         "Le reste est en HTML/JavaScript/CSS.",
-        "Testé sur :<ul><li>Firefox (v64)</li><li>Chrome (v71)</li><li>iOS Safari (v12)</li></ul>",
+        "Testé sur :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "Firefox (v64)",
+            "Chrome (v71)",
+            "iOS Safari (v12)"
+          ]
+        },
         "Ne fonctionne pas sur Internet Explorer (v11) et Edge (v40)."
       ]
     }

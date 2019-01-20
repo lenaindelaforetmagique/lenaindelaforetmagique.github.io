@@ -12,7 +12,14 @@
       "lines": [
         "Vous êtes le pilote du vaisseau et vous devez suivre votre mission (symbolisée par la flèche rouge).",
         "Il n'y a pas grand-chose à faire pour l'instant alors profitez-en pour jouer à piloter ce vaisseau aux degrés de liberté limités :",
-        "<ul><li>le booster principal (barre d'espace) fournit une accélération longitudinale</li><li>les RCS (flèches G/D) fournissent une accélération rotationnelle</li></ul>"
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "le booster principal (barre d'espace) fournit une accélération longitudinale",
+            "les RCS (flèches G/D) fournissent une accélération rotationnelle"
+          ]
+        }
       ]
     },
     {
@@ -30,7 +37,17 @@
       "lines": [
         "Essentiellement JavaScript et SVG. L'affichage du jeu complet est fait dans une image SVG qui est modifiée dynamiquement par le moteur de jeu écrit en JavaScript.",
         "Évènements clavier et tactiles.",
-        "Testé sur :<ul><li>Firefox (v64)</li><li>Chrome (v71)</li><li>Edge (v40)</li><li>iOS Safari (v12)</li></ul>",
+        "Testé sur :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "Firefox (v64)",
+            "Chrome (v71)",
+            "Edge (v40)",
+            "iOS Safari (v12)"
+          ]
+        },
         "Ne fonctionne pas sur Internet Explorer (v11)."
       ]
     }

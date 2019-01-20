@@ -12,7 +12,15 @@
       "lines": [
         "Un <em>boid</em> est un automate censé reproduire le comportement d'un oiseau (bird-oid).",
         "D'après Wikipédia, c'est Craig Reynolds qui en a imaginé les règles en 1986 :",
-        "<ul><li>cohésion : les oiseaux essaient de se rapprocher de leurs voisins.</li><li>séparation : les oiseaux essaient de ne pas se percuter.</li><li>alignement : les oiseaux essaient de voler en formation, dans la même direction.</li></ul>",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "cohésion : les oiseaux essaient de se rapprocher de leurs voisins.",
+            "séparation : les oiseaux essaient de ne pas se percuter.",
+            "alignement : les oiseaux essaient de voler en formation, dans la même direction."
+          ]
+        },
         "De nombreux développeurs se sont prêtés à l'exercice, voici ma version.",
         "Ajoutez des oiseaux avec la souris. Pour ajouter des obstacles, cliquez sur le sélecteur en haut à gauche."
       ]
@@ -32,7 +40,17 @@
       "lines": [
         "Essentiellement JavaScript et SVG. L'affichage de la page est fait dans une image SVG qui est modifiée dynamiquement par le moteur de calcul écrit en JavaScript.",
         "Évènements clavier, souris et tactiles.",
-        "Testé sur :<ul><li>Firefox (v64)</li><li>Chrome (v71)</li><li>Edge (v40)</li><li>iOS Safari (v12)</li></ul>",
+        "Testé sur :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "Firefox (v64)",
+            "Chrome (v71)",
+            "Edge (v40)",
+            "iOS Safari (v12)"
+          ]
+        },
         "Ne fonctionne pas sur Internet Explorer (v11)."
       ]
     }
