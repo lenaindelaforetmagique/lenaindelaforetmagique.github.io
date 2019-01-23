@@ -12,6 +12,7 @@ body {
 header {
   font-family: 'Fredericka the Great', cursive;
   color: #444444;
+  font-weight: normal;
 }
 
 nav ul {
