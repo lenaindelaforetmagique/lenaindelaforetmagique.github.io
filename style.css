@@ -9,7 +9,7 @@ body {
   color: white;
 }
 
-header {
+header, h1 {
   font-family: 'Fredericka the Great', cursive;
   color: #444444;
   font-weight: normal;
