@@ -1,8 +1,9 @@
 class Article {
-  constructor(jsonURL, parent) {
+  constructor(jsonURL, parentDOM_) {
+    this.parentDOM = parentDOM_;
     this.dom = document.createElement('article');
-    parent.dom.appendChild(this.dom);
-    this.parent = parent;
+    this.parentDOM.appendChild(this.dom);
+
     this.title = "";
     this.date = "";
     this.author = "";
@@ -10,6 +11,7 @@ class Article {
     this.imgURL = "";
     this.introduction = "";
     this.content = "";
+    this.source = jsonURL;
 
     let thiz = this;
     let requ = new XMLHttpRequest();
@@ -24,10 +26,10 @@ class Article {
         thiz.introduction = requ.response.introduction;
         thiz.content = requ.response.content;
         thiz.show();
-        thiz.parent.parent.addArticle();
       } else {
-        this.dom.innerHTML = "<p class=\"error\">L'article <em>" + url + "</em> n'a pas pu être chargé correctement...</p>";
+        thiz.dom.innerHTML = "<p class=\"error\">L'article <em>" + jsonURL + "</em> n'a pas pu être chargé correctement...</p>";
       }
+      document.dispatchEvent(new Event("articleLoaded"));
     };
     requ.open('GET', jsonURL);
     requ.send();
@@ -84,12 +86,17 @@ class Article {
         }
         this.dom.appendChild(domLine);
       }
-
     }
     // let author = document.createElement("p");
     // author.setAttribute("class", "author");
     // author.innerHTML = this.author;
     // this.dom.appendChild(author);
-
+    let endLine = document.createElement('p');
+    let a_ = document.createElement('a');
+    a_.setAttribute("href", '?' + this.source);
+    a_.innerHTML = "<img src=\"img\\link-logo.svg\" height=14 title=\"Lien vers cet article\"  onmouseover=\"this.src='img/link-logo-gray.svg';\" onmouseout=\"this.src='img/link-logo.svg';\" >";
+    endLine.appendChild(a_);
+    endLine.setAttribute("class", "foot");
+    this.dom.appendChild(endLine);
   }
 }

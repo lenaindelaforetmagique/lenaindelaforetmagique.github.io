@@ -1,15 +1,9 @@
 //////////////////////////////////////////////////////////////////////////////
 
 class PageContent {
-  constructor(jsonURL, parent_) {
-    this.parent = parent_;
+  constructor(jsonURL) {
     this.articlesURL = [];
-    this.articles = [];
-    this.dom = document.getElementById('main');
-    // clear "main"
-    while (this.dom.firstChild) {
-      this.dom.removeChild(this.dom.firstChild);
-    }
+    this.count = 0;
 
     let thiz = this;
     // Load jsonURL content
@@ -18,8 +12,7 @@ class PageContent {
     request.onload = function() {
       if (request.response != null) {
         thiz.articlesURL = request.response.articlesURL;
-        // while (thiz.loadArticle()) {}
-        thiz.parent.addArticle();
+        document.dispatchEvent(new Event("articleLoaded"));
       } else {
         console.log(jsonURL, " inexistant !");
       }
@@ -28,15 +21,14 @@ class PageContent {
     request.send();
   }
 
-  loadArticle() {
-    let loadedCount = this.articles.length;
+  loadArticle(jsonURL = "") {
     let totalCount = this.articlesURL.length;
 
-    if (loadedCount < totalCount) {
-      this.articles.push(new Article(this.articlesURL[loadedCount], this));
-      return true;
-    } else {
-      return false;
+    if (this.count < totalCount) {
+      document.dispatchEvent(new CustomEvent("loadArticle", {
+        "detail": this.articlesURL[this.count]
+      }));
+      this.count += 1;
     }
   }
 }
@@ -44,7 +36,7 @@ class PageContent {
 ///////////////////////////////////////////////////////////////////////////////
 
 class Menu {
-  constructor(jsonMenuURL, parent_) {
+  constructor(jsonMenuURL, parent_, loadFirstPage = true) {
     this.parent = parent_;
     this.items = null;
     this.links = [];
@@ -56,7 +48,9 @@ class Menu {
       if (request.response != null) {
         thiz.items = request.response.items;
         thiz.show();
-        thiz.links[0].onclick();
+        if (loadFirstPage) {
+          thiz.links[0].onclick();
+        }
       }
     }
     request.open('GET', jsonMenuURL);
@@ -69,13 +63,13 @@ class Menu {
     let ul = document.createElement('ul');
     parentDOM.appendChild(ul);
     for (let item of this.items) {
-      // console.log(item);
       let li = document.createElement('li');
       ul.appendChild(li);
       let a = document.createElement('a');
-      // a.setAttribute('href', '#');
       a.onclick = function() {
-        thiz.parent.loadPageContent(item.jsonURL);
+        document.dispatchEvent(new CustomEvent("menuOnClick", {
+          "detail": item.jsonURL
+        }));
         for (let item of document.getElementsByClassName('selected')) {
           item.setAttribute("class", "");
         }
@@ -90,71 +84,64 @@ class Menu {
 
 ///////////////////////////////////////////////////////////////////////////////
 
-class PageStructure {
-  constructor(jsonMenuURL) {
-    this.menu = new Menu(jsonMenuURL, this);
-    this.currentPageContent = null;
+class HTMLView {
+  constructor(jsonMenuURL, jsonArticle) {
+    this.nav = document.getElementById("nav");
+    this.main = document.getElementById("main");
     this.footer = document.getElementById("footer");
 
-    this.prevPageYOffset = 0;
-    this.bottomCount = 0;
+    this.currentPageContent = null;
+
+    if (jsonArticle == "") {
+      this.menu = new Menu(jsonMenuURL, this.nav, true);
+    } else {
+      this.menu = new Menu(jsonMenuURL, this.nav, false);
+      this.loadArticle(jsonArticle);
+    }
+
     let thiz = this;
-    //
-    // document.addEventListener("mousedown", function(e) {
-    //   e.preventDefault();
-    //   console.log(e);
-    //   thiz.addArticle();
-    // });
 
     document.onwheel = function(e) {
       thiz.handle_onwheel(e);
-    }
+    };
 
     document.onscroll = function(e) {
       thiz.handle_onwheel(e);
-    }
-    document.addEventListener("touchmove", function(e) {
-      thiz.handle_touchmove(e)
-    })
+    };
 
+    document.addEventListener("loadArticle", function(e) {
+      thiz.loadArticle(e.detail);
+    });
+
+    document.addEventListener("articleLoaded", function(e) {
+      thiz.handle_articleLoaded();
+    });
+
+    document.addEventListener("menuOnClick", function(e) {
+      thiz.loadPageContent(e.detail);
+    });
   }
 
   loadPageContent(jsonURL) {
+    while (this.main.firstChild) {
+      this.main.removeChild(this.main.firstChild);
+    }
     this.currentPageContent = new PageContent(jsonURL, this);
   }
 
-  addArticle() {
-    let bool = true;
-    if (bool && (window.pageYOffset + window.innerHeight > this.footer.offsetTop)) {
-      bool = this.currentPageContent.loadArticle();
+  loadArticle(jsonURL = "") {
+    let newArticle = new Article(jsonURL, this.main);
+  }
+
+  handle_articleLoaded() {
+    if (this.currentPageContent != null && (window.pageYOffset + window.innerHeight > this.footer.offsetTop)) {
+      this.currentPageContent.loadArticle();
     }
   }
 
-  handle_touchmove(e) {
-    // this.addArticle();
-  }
-
   handle_onwheel(e) {
-    this.addArticle();
-    //
-    // // console.log(this.bottomCount);
-    // if (e.deltaY > 0) {
-    //   // console.log("descente");
-    //   if (window.pageYOffset == this.prevPageYOffset) {
-    //     // console.log("haha");
-    //     this.bottomCount += 1;
-    //     if (this.bottomCount > 30) {
-    //       this.addArticle();
-    //       this.bottomCount = 0;
-    //     }
-    //   }
-    // } else {
-    //   // console.log("montee");
-    //   this.bottomCount = 0;
-    // }
-    // this.prevPageYOffset = window.pageYOffset;
+    this.handle_articleLoaded();
   }
 }
 
-
-let pageStructure = new PageStructure("menu.json");
+let pageStructure = new HTMLView("menu.json", window.location.search.substring(1));

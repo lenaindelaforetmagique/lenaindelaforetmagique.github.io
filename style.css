@@ -38,7 +38,8 @@ article {
 }
 
 article h2 {
-  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.3); */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
 }
 
 article h3 {
@@ -47,6 +48,17 @@ article h3 {
 
 article p.error {
   color: darkred;
+}
+
+article p.foot {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  text-align: right;
+  margin: 0;
+}
+
+footer p {
+  color: #444444;
+  font-size: 12px;
 }
 
 a:link {
