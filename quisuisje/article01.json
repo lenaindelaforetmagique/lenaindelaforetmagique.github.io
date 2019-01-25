@@ -52,6 +52,7 @@
         "type": "List",
         "style": "inline",
         "items": [
+          "<a href=\"https://www.linkedin.com/in/xavier-morin-98275749\" target=\"_blank\"><img height=32 src=\"img/linkedin-logo.svg\" title=\"Visitez mon profil LinkedIn\" onmouseover=\"this.src='img/linkedin-logo-gray.svg';\" onmouseout=\"this.src='img/linkedin-logo.svg';\"></a>",
           "<a href=\"https://github.com/lenaindelaforetmagique\" target=\"_blank\"><img height=32 src=\"img/github-logo.svg\" title=\"Visitez ma page GitHub\" onmouseover=\"this.src='img/github-logo-gray.svg';\" onmouseout=\"this.src='img/github-logo.svg';\"></a>",
           "<a href=\"https://projecteuler.net/progress=lenain\" target=\"blank\"><img height=32 src=\"https://projecteuler.net/profile/lenain.png\" title=\"Project Euler\"></a>",
           "<a href=\"https://soundcloud.com/user-1663886-334308596\" target=\"_blank\"><img height=32 src=\"img/soundcloud-logo.svg\" title=\"Visitez ma page SoundCloud\" onmouseover=\"this.src='img/soundcloud-logo-gray.svg';\" onmouseout=\"this.src='img/soundcloud-logo.svg';\"></a>"
