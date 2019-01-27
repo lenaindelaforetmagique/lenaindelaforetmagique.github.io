@@ -1,0 +1,53 @@
+{
+  "type": "Article",
+  "title": "Asteroïds 2",
+  "date": "27/01/2019",
+  "author": "Xavier Morin",
+  "URL": "http://lenaindelaforetmagique.github.io/Asteroids2/",
+  "imgURL": "http://lenaindelaforetmagique.github.io/Asteroids2/screenshot.png",
+  "introduction": "<em>Asteroïds 2</em> est ma version du célèbre jeu <em>Asteroids</em>.",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Description",
+      "lines": [
+        "Vous êtes le pilote du vaisseau et vous devez détruire les astéroïdes qui se trouvent sur votre route. Les niveaux sont de plus en plus difficiles à passer, quel sera votre record ?",
+        "Les contrôles à votre disposition :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "les flèches pour vous déplacer",
+            "la touche CTRL pour tirer",
+            "la barre d'espace si vous périssez"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Motivations",
+      "lines": [
+        "J'aime le format de ces petits jeux qui ont un potentiel très addictif et je m'étais promis de créer ma version d'<em>Asteroïds</em>..."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Technologies mises en œuvre",
+      "lines": [
+        "Rien de très nouveau sur ce projet : essentiellement JavaScript et SVG, un peu de CSS. Le lecteur curieux et attentif retrouvera pas mal de lignes de code de <em>Spaceship</em> et <em>Boids</em> ; à quoi bon réinventer la roue ?",
+        "Pour l'instant, le jeu n'est disponible que sur ordinateur, on verra si je me lance dans une version tactile...",
+        "Testé sur :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "Firefox (v64)",
+            "Chrome (v71)",
+            "Edge (v40)"
+          ]
+        },
+        "Ne fonctionne pas sur Internet Explorer (v11)."
+      ]
+    }
+  ]
+}

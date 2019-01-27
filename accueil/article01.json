@@ -5,26 +5,26 @@
   "author": "Xavier Morin",
   "URL": "",
   "imgURL": "",
-  "introduction": "Bienvenue sur ma page perso ! Vous y trouverez le résultat de mes projets personnels de développement.",
+  "introduction": "Bienvenue sur ma page perso ! Vous y trouverez le résultat de mes projets personnels de développement. Certains de ces projets sont des supports d'auto-formation, d'autres sont des manifestations de mes centres d'intérêts.",
   "content": [{
       "type": "Paragraph",
       "title": "Jeux",
       "lines": [
-        "Quelques petits jeux ou ébauches de jeux..."
+        "Quelques petits jeux ou ébauches de jeux... Sans doute pas de quoi révolutionner l'industrie du jeu-vidéo mais quelques productions fidèles à ce que j'aime dans le jeu : des règles simples et un graphisme simple qui cachent une complexité bien réelle..."
       ]
     }, {
       "type": "Paragraph",
       "title": "Geekeries",
       "lines": [
-        "Je revendique l'inutilité de ces productions mais <em>« on ne se bat pas dans l'espoir du succès ! Non ! non, c'est bien plus beau lorsque c'est inutile ! »</em>.",
-        "Certains de ces projets sont des supports d'auto-formation, d'autres sont des manifestations de mes centres d'intérêts."
+        "Dans cette section, je présente des illustrations de sujets scientifiques qui méritaient d'être rendus visibles.",
+        "Je revendique l'inutilité de ces productions mais <em>« on ne se bat pas dans l'espoir du succès ! Non ! non, c'est bien plus beau lorsque c'est inutile ! »</em>."
       ]
     },
     {
       "type": "Paragraph",
       "title": "Qui suis-je ?",
       "lines": [
-        "Découvrez-en un peu plus sur moi..."
+        "Découvrez-en un peu plus sur moi et trouvez des moyens de me contacter..."
       ]
     }
   ]
