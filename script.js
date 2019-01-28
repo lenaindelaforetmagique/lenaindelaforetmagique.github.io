@@ -96,6 +96,7 @@ class HTMLView {
       this.menu = new Menu(jsonMenuURL, this.nav, true);
     } else {
       this.menu = new Menu(jsonMenuURL, this.nav, false);
+      this.cleanMain();
       this.loadArticle(jsonArticle);
     }
 
@@ -122,10 +123,14 @@ class HTMLView {
     });
   }
 
-  loadPageContent(jsonURL) {
+  cleanMain() {
     while (this.main.firstChild) {
       this.main.removeChild(this.main.firstChild);
     }
+  }
+
+  loadPageContent(jsonURL) {
+    this.cleanMain();
     this.currentPageContent = new PageContent(jsonURL, this);
   }
 
