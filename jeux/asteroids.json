@@ -17,7 +17,7 @@
           "class": "",
           "items": [
             "les flèches pour vous déplacer",
-            "la touche CTRL pour tirer",
+            "la touche S pour tirer",
             "la barre d'espace si vous périssez"
           ]
         }
@@ -34,7 +34,7 @@
       "type": "Paragraph",
       "title": "Technologies mises en œuvre",
       "lines": [
-        "Rien de très nouveau sur ce projet : essentiellement JavaScript et SVG, un peu de CSS. Le lecteur curieux et attentif retrouvera pas mal de lignes de code de <em>Spaceship</em> et <em>Boids</em> ; à quoi bon réinventer la roue ?",
+        "Essentiellement JavaScript et SVG, un peu de CSS. Le lecteur curieux et attentif retrouvera pas mal de lignes de code de <em>Spaceship</em> et <em>Boids</em> ; à quoi bon réinventer la roue ?",
         "Pour l'instant, le jeu n'est disponible que sur ordinateur, on verra si je me lance dans une version tactile...",
         "Testé sur :",
         {
@@ -42,11 +42,10 @@
           "class": "",
           "items": [
             "Firefox (v64)",
-            "Chrome (v71)",
-            "Edge (v40)"
+            "Chrome (v71)"
           ]
         },
-        "Ne fonctionne pas sur Internet Explorer (v11)."
+        "Ne fonctionne pas sur Internet Explorer (v11) et Edge (v40)."
       ]
     }
   ]
