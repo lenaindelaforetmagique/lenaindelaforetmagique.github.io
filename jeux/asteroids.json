@@ -1,7 +1,7 @@
 {
   "type": "Article",
   "title": "Asteroïds 2",
-  "date": "27/01/2019",
+  "date": "08/02/2019",
   "author": "Xavier Morin",
   "URL": "http://lenaindelaforetmagique.github.io/Asteroids2/",
   "imgURL": "http://lenaindelaforetmagique.github.io/Asteroids2/screenshot.png",
@@ -18,9 +18,11 @@
           "items": [
             "les flèches pour vous déplacer",
             "la touche S pour tirer",
+            "la touche G pour lancer une grenade",
             "la barre d'espace si vous périssez"
           ]
-        }
+        },
+        "Pour l'instant, le vaisseau se pilote uniquement au clavier, on verra si je me lance dans une version tactile..."
       ]
     },
     {
@@ -34,8 +36,15 @@
       "type": "Paragraph",
       "title": "Technologies mises en œuvre",
       "lines": [
-        "Essentiellement JavaScript et SVG, un peu de CSS. Le lecteur curieux et attentif retrouvera pas mal de lignes de code de <em>Spaceship</em> et <em>Boids</em> ; à quoi bon réinventer la roue ?",
-        "Pour l'instant, le jeu n'est disponible que sur ordinateur, on verra si je me lance dans une version tactile...",
+        "Avec mes récentes expériences (<em>Spaceship</em> et <em>Boids</em>), le moteur principal de jeu n'a pas été d'une grande difficulté et m'aura pris un après-midi. C'est quand j'ai commencé à vouloir améliorer des choses que ça s'est gâté :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "j'ai créé une bibliothèque graphique de dessin sur un tore pour améliorer les transitions lorsqu'un objet franchit le bord de l'écran",
+            "j'ai créé une bibliothèque de maillage de polygones qui fera l'objet d'un prochain billet du côté des <em>geekeries</em>..."
+          ]
+        },
         "Testé sur :",
         {
           "type": "List",

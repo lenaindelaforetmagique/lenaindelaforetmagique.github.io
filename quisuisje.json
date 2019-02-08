@@ -1,6 +1,7 @@
 {
   "type": "ArticleCollection",
   "articlesURL": [
-    "quisuisje/article01.json"
+    "quisuisje/article01.json",
+    "quisuisje/article02.json"
   ]
 }

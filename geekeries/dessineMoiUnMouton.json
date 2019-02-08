@@ -17,23 +17,15 @@
       "type": "Paragraph",
       "title": "Un peu de maths",
       "lines": [
-        "Une forme fermée est un polygone constitué de points (x, y). Comme cette forme est fermée, elle est périodique ; on peut donc chercher sa décomposition en série de Fourier.",
-        "Chaque point est alors vu comme un nombre complexe que l'on cherche à écrire comme la somme de coordonnées de points de cercles.",
-        "Pour une harmonique, on a :",
-        "Hn : x |--> c_n(f)×e^(i×2*π*x/T) + c_-n(f)×e^(-i×2*π*x/T)",
-        "avec : <ul><li>c_k(f) = 1/T×integrale(f(t)×e^(-i×2kπ×t/T)×dt, -T/2, T/2)</li><li>f(t) : la série de points.</li></ul>",
-        "Finalement, on a :<ul><li>f(t) = Sum(Hn(x), n=-∞, n=+∞)</li><li>Hn(x) = c_+n×e^(i×K×x) + c_-n×e^(-i×K×x)</li></ul>",
-        "où :<ul><li>c_+n = r×e^(i×θ)</li><li>c_-n = r'×e^(i×θ')</li><li>K = 2×n×π/T</li></ul>",
-        "On calcule les coefficients complexes de Fourier en intégrant avec la méthode des rectangles :",
-        "c_n(f) = Sum((a_k+i×b_k)×e^(-i×2nπ×k/N), k=0, k=N-1)/N",
-        "avec N = nbre de points",
-        "Chaque coefficient complexe donne un rayon de cercle (son module) et une phase (son argument). La vitesse de rotation de chaque cercle est déterminée par le rang de l'harmonique seule. Pour chaque harmonique on obtient deux cercles de vitesses de rotation opposées.",
-        ""
+        "Une forme fermée est un polygone constitué de points. Comme cette forme est fermée, elle est périodique ; on peut donc chercher sa décomposition en série de Fourier.",
+        "La décomposition en séries de Fourier d'une courbe consiste à exprimer cette courbe comme une somme de courbes sinusoïdales de fréquences et d'intensités différentes. Chaque sinusoïde (ou harmonique) permet alors d'approcher l'allure de la courbe que l'on cherche à reproduire. Plus on a d'harmoniques, plus on arrivera à s'approcher de la courbe initiale.",
+        "Une harmonique peut-être vue comme un point tournant sur un cercle d'un certain rayon (qui détermine l'intensité) à une certaine vitesse angulaire (qui détermine la fréquence).",
+        "En « empilant » ces cercles, on forme ce qu'on appelle des <em>épicycloïdes</em> et l'on découvre, un peu par magie, que quelques paramètres seulement permettent de reproduire notre forme initiale..."
       ]
     },
     {
       "type": "Paragraph",
-      "title": "Motivations",
+      "title": "Inspiration",
       "lines": [
         "Je dois l'inspiration de ce petit projet à <a href=\"https://www.youtube.com/watch?v=uazPP0ny3XQ\" target=\"blank\">cette vidéo de El Jj</a>. J'ai été, encore une fois, bluffé par la puissance des mathématiques, il fallait que je m'y frotte !"
       ]
