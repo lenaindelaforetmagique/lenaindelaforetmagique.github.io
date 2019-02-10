@@ -5,30 +5,30 @@
   "author": "Xavier Morin",
   "URL": "https://fr.wikipedia.org/wiki/Anna_Fisher",
   "imgURL": "quisuisje/id_.jpg",
-  "introduction": "Puissent ces quelques lignes vous en dire un peu plus sur moi...",
+  "introduction": "Je ne trouvais pas de bonne photo de moi alors j'ai préféré mettre une photo d'une jolie fille qui a réussi dans la vie...",
   "content": [{
       "type": "Paragraph",
       "title": "Curiculum Vitæ brevis",
       "lines": [
+        "Je m'appelle Xavier Morin et je suis développeur de programmes de calcul dans le domaine de la construction.",
         "Après avoir suivi une formation scientifique dans le domaine de la construction, j'ai travaillé pendant 7 ans en bureau d'études structures de plusieurs entreprises sur des grands projets de génie civil.",
-        "Depuis fin 2017, j'ai changé d'activité principale en passant de développeur en <em>temps masqué</em> à developpeur à <em>temps plein</em>, essentiellement en développant des programmes de calcul pour le bureau d'études de mon entreprise.",
-        "Pour plus de détails, <a href=\"https://www.linkedin.com/in/xavier-morin-98275749\" target=\"_blank\">mon profil LinkedIn</a> est censé être à jour..."
+        "Depuis fin 2017, j'ai changé d'activité principale en passant de développeur en <em>temps masqué</em> à developpeur à <em>temps plein</em> essentiellement de programmes de calcul pour le bureau d'études de mon entreprise.",
+        "Pour plus de détails sur ma vie professionnelle, <a href=\"https://www.linkedin.com/in/xavier-morin-98275749\" target=\"_blank\">mon profil LinkedIn</a> est censé être à jour...",
+        "Curieux de presque tout (mais quand même beaucoup dans le domaine scientifique), je saisis chaque occasion qui se présente pour créer des petits projets de développement. Petits projets que j'ai décidé de présenter sur cette page personnelle..."
       ]
     },
     {
       "type": "Paragraph",
       "title": "Langages pratiqués",
       "lines": [{
-          "type": "List",
-          "style": "",
-          "items": [
-            "Oubliés : BASIC, Casio-Basic, TI-Basic",
-            "En cours d'oubli : C, lua",
-            "Couramment utilisés : C#, VB.NET, VBA, Python, HTML/CSS/JavaScript"
-          ]
-        }
-
-      ]
+        "type": "List",
+        "style": "",
+        "items": [
+          "Oubliés : BASIC, Casio-Basic, TI-Basic",
+          "En cours d'oubli : C, lua",
+          "Couramment utilisés : C#, VB.NET, VBA, Python, HTML/CSS/JavaScript"
+        ]
+      }]
     },
     {
       "type": "Paragraph",

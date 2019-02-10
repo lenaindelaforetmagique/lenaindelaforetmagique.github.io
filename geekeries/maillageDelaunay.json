@@ -1,0 +1,45 @@
+{
+  "type": "Article",
+  "title": "Maillage et triangulation de Delaunay",
+  "date": "10/02/2019",
+  "author": "Xavier Morin",
+  "URL": "http://lenaindelaforetmagique.github.io/Asteroids2/mesh.html",
+  "imgURL": "http://lenaindelaforetmagique.github.io/Asteroids2/mesh.gif",
+  "introduction": "La page d'illustration de ma bibliothèque de maillage de surface.",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Description",
+      "lines": [
+        "Cliquez pour créer les sommets d'un polygone dans le sens des aiguilles d'une montre et observez la triangulation de la surface..."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Motivations",
+      "lines": [
+        "J'ai développé cette bibliothèque dans le cadre de mon projet <em>Asteroids 2</em>.",
+        "Le maillage de surface est une méthode courament utilisée pour définir une forme complexe comme un aggrégat de formes simples. De nombreuses utilisations de maillages existent dans des domaines tels que les jeux vidéos, les films d'animation ou le domaine de l'ingénierie.",
+        "Dans le cas d'<em>Asteroids 2</em>, j'avais besoin d'être capable de détecter les impacts entre les objets du jeu ; cette vérification est beaucoup plus facile en raisonnant sur des triangles plutôt que sur des contours complexes."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Technologies mises en œuvre",
+      "lines": [
+        "La triangulation qui est faite sur le nuage de point est une triangulation de Delaunay ; celle-ci garantit d'avoir des triangles aux formes « équilibrées ». Les algorithmes mis en place sont de ma composition et sont certainement sous-optimaux mais ils fonctionnent...",
+        "Cette page ne fonctionne que sur ordinateur (évènements clavier&souris) mais la librairie a été testée sur :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "Firefox (v64)",
+            "Chrome (v71)",
+            "Edge (v40)",
+            "iOS Safari (v12)"
+          ]
+        },
+        "Ne fonctionne pas sur Internet Explorer (v11)."
+      ]
+    }
+  ]
+}
