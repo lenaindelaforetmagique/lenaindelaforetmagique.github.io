@@ -37,7 +37,7 @@ class Article {
 
   show() {
     let h2 = document.createElement('h2');
-    h2.innerHTML = this.title;
+    h2.innerHTML = renderString(this.title);
     this.dom.appendChild(h2);
 
     let date = document.createElement("div");
@@ -60,27 +60,27 @@ class Article {
     }
 
     let intro = document.createElement('p');
-    intro.innerHTML = this.introduction;
+    intro.innerHTML = renderString(this.introduction);
     this.dom.appendChild(intro);
 
     for (let para of this.content) {
       if (para.title != "") {
         let h3 = document.createElement('h3');
-        h3.innerHTML = para.title;
+        h3.innerHTML = renderString(para.title);
         this.dom.appendChild(h3);
       }
 
       for (let line of para.lines) {
         let domLine = document.createElement('p');
         if (typeof line == "string") {
-          domLine.innerHTML = line;
+          domLine.innerHTML = renderString(line);
         } else if (line.type == "List") {
           let ul = document.createElement('ul');
           ul.setAttribute("class", line.style);
           domLine.appendChild(ul);
           for (let item of line.items) {
             let li = document.createElement('li');
-            li.innerHTML = item;
+            li.innerHTML = renderString(item);
             ul.appendChild(li);
           }
         }
@@ -99,4 +99,21 @@ class Article {
     endLine.setAttribute("class", "foot");
     this.dom.appendChild(endLine);
   }
+}
+
+renderString = function(string) {
+  // add non-breaking spaces
+  let res = string;
+  let replacements = [
+    [" ?", "&nbsp;?"],
+    [" ;", "&nbsp;;"],
+    [" :", "&nbsp;:"],
+    [" !", "&nbsp;!"],
+    ["« ", "«&nbsp;"],
+    ["» ", "&nbsp;»"]
+  ];
+  for (let repl of replacements) {
+    res = res.replace(repl[0], repl[1]);
+  }
+  return res;
 }

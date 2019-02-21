@@ -14,6 +14,14 @@ header {
   position: relative;
 }
 
+header div {
+  position: relative;
+  left: 100px;
+  top: 0px;
+  width: 400px;
+  height: 100px;
+}
+
 header h1 {
   margin: 0;
   padding: 30px 0 0 0;
@@ -25,6 +33,12 @@ header p {
   padding: 0 0 0 20px;
   font-size: 14px;
   font-style: italic;
+}
+
+header img {
+  position: absolute;
+  left: 0px;
+  top: 10px;
 }
 
 /* header img {
@@ -153,7 +167,7 @@ footer li {
   vertical-align: bottom;
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 600px) {
   body {
     -webkit-text-size-adjust: none;
     width: 98%;
@@ -173,5 +187,15 @@ footer li {
 
   article {
     margin: 8px;
+  }
+}
+
+@media screen and (max-device-width: 400px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  header p {
+    font-size: 12px;
   }
 }
