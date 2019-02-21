@@ -18,7 +18,7 @@ header div {
   position: relative;
   left: 100px;
   top: 0px;
-  width: 400px;
+  width: 300px;
   height: 100px;
 }
 
@@ -191,6 +191,10 @@ footer li {
 }
 
 @media screen and (max-device-width: 400px) {
+  header div {
+    width: 225px;
+  }
+
   header h1 {
     font-size: 24px;
   }
