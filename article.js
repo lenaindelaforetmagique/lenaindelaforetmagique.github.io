@@ -1,5 +1,5 @@
 class Article {
-  constructor(jsonURL, parentDOM_) {
+  constructor(jsonURL, parentDOM_, changeMeta = false) {
     this.parentDOM = parentDOM_;
     this.dom = document.createElement('article');
     this.parentDOM.appendChild(this.dom);
@@ -26,6 +26,9 @@ class Article {
         thiz.introduction = requ.response.introduction;
         thiz.content = requ.response.content;
         thiz.show();
+        if (changeMeta) {
+          thiz.changeMeta();
+        }
       } else {
         thiz.dom.innerHTML = "<p class=\"error\">L'article <em>" + jsonURL + "</em> n'a pas pu être chargé correctement...</p>";
       }
@@ -98,6 +101,17 @@ class Article {
     endLine.appendChild(a_);
     endLine.setAttribute("class", "foot");
     this.dom.appendChild(endLine);
+  }
+
+  changeMeta() {
+    console.log("coucou");
+    let dom = document.getElementById("ogpic");
+    // let dom = document.createElement("meta");
+    // dom.setAttribute("property", "og:image");
+    dom.setAttribute("content", this.imgURL);
+    // document.head.appendChild(dom);
+
+    console.log(dom);
   }
 }
 

@@ -97,7 +97,7 @@ class HTMLView {
     } else {
       this.menu = new Menu(jsonMenuURL, this.nav, false);
       this.cleanMain();
-      this.loadArticle(jsonArticle);
+      this.loadArticle(jsonArticle, true);
     }
 
     let thiz = this;
@@ -134,8 +134,8 @@ class HTMLView {
     this.currentPageContent = new PageContent(jsonURL, this);
   }
 
-  loadArticle(jsonURL = "") {
-    let newArticle = new Article(jsonURL, this.main);
+  loadArticle(jsonURL = "", changeMeta = false) {
+    let newArticle = new Article(jsonURL, this.main, changeMeta);
   }
 
   handle_articleLoaded() {
