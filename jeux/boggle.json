@@ -1,0 +1,48 @@
+{
+  "type": "Article",
+  "title": "Boggle",
+  "date": "17/04/2019",
+  "author": "Xavier Morin",
+  "URL": "http://lenaindelaforetmagique.github.io/Boggle/",
+  "imgURL": "http://lenaindelaforetmagique.github.io/Boggle/screenshot.png",
+  "introduction": "<em>Boggle</em> est ma version du célèbre jeu de dés et de lettres.",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Description",
+      "lines": [
+        "Le joeur doit réussir à former un maximum de mots dans le temps imparti (chronomètre non implémenté).",
+        "Chaque mot est formé par une suite de lettre contigües de la grille ; chaque lettre ne pouvant être utilisée qu'une fois par mot.",
+        "Le programme mélange la boîte de dés et recherche l'ensemble des mots jouables en parcourant la grille en profondeur."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Motivations",
+      "lines": [
+        "Tout est parti d'une soirée où j'ai, par erreur, parlé de jeux de lettres... On ne peut pas vraiment dire que je sois fan de ce jeu mais la partie résolution m'intéressait.",
+        "Et, ne voyant plus d'obstacle de taille à me démotiver, je n'ai plus eu le choix que de me lancer dès que j'ai eu un peu de temps devant moi."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Technologies mises en œuvre",
+      "lines": [
+        "L'algorithme de résolution s'appuie sur un dictionnaire (ODS7) mis sous forme de graphe.",
+        "Chaque lettre épelée d'un mot définit une nouvelle branche à partir de la lettre précédente. Cela permet une recherche rapide de l'existence ou non d'une séquence de lettres dans le dictionnaire.",
+        "Langages : HTML, CSS, JavaScript, tout les objets affichés sont des objets du DOM.",
+        "Testé sur :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "Firefox (v64)",
+            "Chrome (v71)",
+            "Edge (v40)",
+            "iOS Safari (v12)"
+          ]
+        },
+        "Ne fonctionne pas sur Internet Explorer (v11)."
+      ]
+    }
+  ]
+}

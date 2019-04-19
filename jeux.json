@@ -1,6 +1,7 @@
 {
   "type": "ArticleCollection",
   "articlesURL": [
+    "jeux/boggle.json",
     "jeux/asteroids.json",
     "jeux/spaceship.json",
     "jeux/mastermind.json",
