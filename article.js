@@ -124,7 +124,7 @@ renderString = function(string) {
     [" :", "&nbsp;:"],
     [" !", "&nbsp;!"],
     ["« ", "«&nbsp;"],
-    ["» ", "&nbsp;»"]
+    [" »", "&nbsp;»"]
   ];
   for (let repl of replacements) {
     res = res.replace(repl[0], repl[1]);
