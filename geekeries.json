@@ -1,6 +1,7 @@
 {
   "type": "ArticleCollection",
   "articlesURL": [
+    "geekeries/geodia.json",
     "geekeries/maillageDelaunay.json",
     "geekeries/boids.json",
     "geekeries/pairenoel.json",
