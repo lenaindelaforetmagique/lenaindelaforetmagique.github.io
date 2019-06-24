@@ -10,7 +10,7 @@
       "type": "Paragraph",
       "title": "Description",
       "lines": [
-        "Le joeur doit réussir à former un maximum de mots dans le temps imparti (chronomètre non implémenté).",
+        "Le joueur doit réussir à former un maximum de mots dans le temps imparti (chronomètre non implémenté).",
         "Chaque mot est formé par une suite de lettre contigües de la grille ; chaque lettre ne pouvant être utilisée qu'une fois par mot.",
         "Le programme mélange la boîte de dés et recherche l'ensemble des mots jouables en parcourant la grille en profondeur."
       ]
