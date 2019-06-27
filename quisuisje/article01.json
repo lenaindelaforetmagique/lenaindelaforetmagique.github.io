@@ -10,9 +10,9 @@
       "type": "Paragraph",
       "title": "Curiculum Vitæ brevis",
       "lines": [
-        "Je m'appelle Xavier Morin et je suis développeur de programmes de calcul dans le domaine de la construction.",
-        "Après avoir suivi une formation scientifique dans le domaine de la construction, j'ai travaillé pendant 7 ans en bureau d'études structures de plusieurs entreprises sur des grands projets de génie civil.",
-        "Depuis fin 2017, j'ai changé d'activité principale en passant de développeur en <em>temps masqué</em> à developpeur à <em>temps plein</em> essentiellement de programmes de calcul pour le bureau d'études de mon entreprise.",
+        "Je m'appelle Xavier Morin et je suis développeur dans le domaine de la construction.",
+        "J'ai travaillé pendant 7 ans en bureau d'études structure de plusieurs entreprises sur des grands projets de génie civil : ponts pour Lignes à Grande Vitesse, tunnel routier à Hong-Kong, ...",
+        "Fin 2017, j'ai changé d'activité principale en passant de développeur en <em>temps masqué</em> à developpeur à <em>temps plein</em> essentiellement de programmes de calcul pour le bureau d'études de mon entreprise.",
         "Pour plus de détails sur ma vie professionnelle, <a href=\"https://www.linkedin.com/in/xavier-morin-98275749\" target=\"_blank\">mon profil LinkedIn</a> est censé être à jour...",
         "Curieux de presque tout (mais quand même beaucoup dans le domaine scientifique), je saisis chaque occasion qui se présente pour créer des petits projets de développement. Petits projets que j'ai décidé de présenter sur cette page personnelle..."
       ]
@@ -39,8 +39,7 @@
         "items": [
           "<a href=\"https://www.linkedin.com/in/xavier-morin-98275749\" target=\"_blank\"><img height=32 src=\"img/linkedin-logo.svg\" title=\"Visitez mon profil LinkedIn\" onmouseover=\"this.src='img/linkedin-logo-gray.svg';\" onmouseout=\"this.src='img/linkedin-logo.svg';\"></a>",
           "<a href=\"https://github.com/lenaindelaforetmagique\" target=\"_blank\"><img height=32 src=\"img/github-logo.svg\" title=\"Visitez ma page GitHub\" onmouseover=\"this.src='img/github-logo-gray.svg';\" onmouseout=\"this.src='img/github-logo.svg';\"></a>",
-          "<a href=\"https://projecteuler.net/progress=lenain\" target=\"blank\"><img height=32 src=\"https://projecteuler.net/profile/lenain.png\" title=\"Project Euler\"></a>",
-          "<a href=\"https://soundcloud.com/user-1663886-334308596\" target=\"_blank\"><img height=32 src=\"img/soundcloud-logo.svg\" title=\"Visitez ma page SoundCloud\" onmouseover=\"this.src='img/soundcloud-logo-gray.svg';\" onmouseout=\"this.src='img/soundcloud-logo.svg';\"></a>"
+          "<a href=\"https://projecteuler.net/progress=lenain\" target=\"blank\"><img height=32 src=\"https://projecteuler.net/profile/lenain.png\" title=\"Project Euler\"></a>"
         ]
       }]
     },

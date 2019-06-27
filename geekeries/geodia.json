@@ -39,7 +39,7 @@
       "type": "Paragraph",
       "title": "Génération des géodes",
       "lines": [
-        "Le principe général de génération des géodes consiste à diviser les faces des polyèdres générateurs en sous-faces plus petites et de projeter ensuite les sommets sur la sphère circonscrite au polèdre initial.",
+        "Le principe de génération des géodes consiste à diviser les faces des polyèdres générateurs en sous-faces plus petites et de projeter ensuite les sommets sur la sphère circonscrite au polyèdre initial.",
         "La division du triangle équilatéral et du carré en polygones réguliers tous identiques plus petits ne pose pas de problème particulier.",
         "En revanche, le cas du pentagone est problématique puisqu'il est impossible de paver, avec des pentagones réguliers, sa surface (cas particulier) et même le plan (cas général).",
         "Le pavage que je présente, même si je n'en suis sans doute pas le découvreur, est une ré-invention de mon cru et permet de décomposer n'importe quel pentagone en pentagones plus petits."
@@ -49,8 +49,8 @@
       "type": "Paragraph",
       "title": "Technologies mises en œuvre",
       "lines": [
-        "Essentiellement JavaScript et SVG. L'affichage de la page est fait dans une image SVG qui est modifiée dynamiquement par le moteur de calcul écrit en JavaScript.",
-        "Affichage 3D et occultations des faces : tout de mon cru.",
+        "JavaScript et dessin vectoriel en SVG.",
+        "Affichage 3D, occultations, éclairage des faces : tout de mon cru.",
         "Évènements clavier, souris et tactiles.",
         "Testé sur :",
         {

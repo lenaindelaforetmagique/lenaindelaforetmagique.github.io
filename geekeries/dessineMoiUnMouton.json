@@ -18,7 +18,7 @@
       "title": "Un peu de maths",
       "lines": [
         "Une forme fermée est un polygone constitué de points. Comme cette forme est fermée, elle est périodique ; on peut donc chercher sa décomposition en série de Fourier.",
-        "La décomposition en séries de Fourier d'une courbe consiste à exprimer cette courbe comme une somme de courbes sinusoïdales de fréquences et d'intensités différentes. Chaque sinusoïde (ou harmonique) permet alors d'approcher l'allure de la courbe que l'on cherche à reproduire. Plus on a d'harmoniques, plus on arrivera à s'approcher de la courbe initiale.",
+        "La décomposition en série de Fourier d'une courbe consiste à exprimer cette courbe comme une somme de courbes sinusoïdales de fréquences et d'intensités différentes. Chaque sinusoïde (ou harmonique) permet alors d'approcher l'allure de la courbe que l'on cherche à reproduire. Plus on a d'harmoniques, plus on arrivera à s'approcher de la courbe initiale.",
         "Une harmonique peut-être vue comme un point tournant sur un cercle d'un certain rayon (qui détermine l'intensité) à une certaine vitesse angulaire (qui détermine la fréquence).",
         "En « empilant » ces cercles, on forme ce qu'on appelle des <em>épicycloïdes</em> et l'on découvre, un peu par magie, que quelques paramètres seulement permettent de reproduire notre forme initiale..."
       ]
