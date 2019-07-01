@@ -11,16 +11,25 @@
       "title": "Description",
       "lines": [
         "Une géode est un polyèdre convexe permettant d'approximer une sphère.",
-        "Cette page permet de générer et manipuler des géodes basées sur les solides de Platon :",
+        "Cette page permet de générer et manipuler des géodes basées sur les solides de Platon et quelques autres curiosités :",
         {
           "type": "List",
           "class": "",
           "items": [
-            "le tétraèdre (4 faces) ;",
-            "l'hexaèdre (6 faces) ;",
-            "l'octaèdre (8 faces) ;",
-            "le dodécaèdre (12 faces) ;",
-            "l'icosaèdre (20 faces)."
+            "le tétraèdre (4 faces - triangles équilatéraux) ;",
+            "l'hexaèdre (6 faces - carrés) ;",
+            "l'octaèdre (8 faces - triangles équilatéraux) ;",
+            "le dodécaèdre (12 faces - pentagones réguliers) ;",
+            "l'icosaèdre (20 faces - triangles équilatéraux)."
+          ]
+        },
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "le cuboctaèdre (14 faces - triangles équilatéraux et carrés) ;",
+            "l'icosidodécaèdre (32 faces - triangles équilatéraux et pentagones réguliers) ;",
+            "le Pentakidodécaèdre (60 faces - triangles isocèles identiques) ;"
           ]
         },
         "Augmenter l'ordre de génération permet de subdiviser chaque face élémentaire en polygones plus petits et permet d'affiner l'approximation de la sphère."
@@ -39,7 +48,7 @@
       "type": "Paragraph",
       "title": "Génération des géodes",
       "lines": [
-        "Le principe de génération des géodes consiste à diviser les faces des polyèdres générateurs en sous-faces plus petites et de projeter ensuite les sommets sur la sphère circonscrite au polyèdre initial.",
+        "Le principe de génération des géodes consiste à diviser les faces des polyèdres générateurs en sous-faces plus petites et de projeter ensuite les nouveaux sommets sur la sphère circonscrite au polyèdre initial.",
         "La division du triangle équilatéral et du carré en polygones réguliers tous identiques plus petits ne pose pas de problème particulier.",
         "En revanche, le cas du pentagone est problématique puisqu'il est impossible de paver, avec des pentagones réguliers, sa surface (cas particulier) et même le plan (cas général).",
         "Le pavage que je présente, même si je n'en suis sans doute pas le découvreur, est une ré-invention de mon cru et permet de décomposer n'importe quel pentagone en pentagones plus petits."
