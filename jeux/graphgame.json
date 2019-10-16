@@ -1,0 +1,43 @@
+{
+  "type": "Article",
+  "title": "Graph Game",
+  "date": "16/10/2019",
+  "author": "Xavier Morin",
+  "URL": "http://lenaindelaforetmagique.github.io/GraphGame/",
+  "imgURL": "http://lenaindelaforetmagique.github.io/GraphGame/screenshot.png",
+  "introduction": "<em>Graph Game</em> est un jeu de démêlage de graphe.",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Description",
+      "lines": [
+        "Déplacez les noeuds de sorte que les arrêtes ne se croisent pas."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Motivations",
+      "lines": [
+        "..."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Technologies mises en œuvre",
+      "lines": [
+        "Langages : HTML, CSS, JavaScript, tout les objets affichés sont des objets du DOM.",
+        "Testé sur :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "Firefox (v64)",
+            "Chrome (v71)",
+            "Edge (v40)",
+            "iOS Safari (v12)"
+          ]
+        },
+        "Ne fonctionne pas sur Internet Explorer (v11)."
+      ]
+    }
+  ]
+}
