@@ -29,7 +29,7 @@
       "type": "Paragraph",
       "title": "Motivations",
       "lines": [
-        "Je tiens l'idée du <a href=\"https://www.youtube.com/watch?v=mhjuuHl6qHM\" target=\"blank\">Coding Challenge #124</a> de Daniel Shiffman.",
+        "Je tiens l'idée du <a href=\"https://www.youtube.com/watch?v=mhjuuHl6qHM\" target=\"_blank\">Coding Challenge #124</a> de Daniel Shiffman.",
         "J'y ai apporté ma touche en persistant avec le SVG, en définissant moi-même les règles de réaction des oiseaux et en ajoutant des obstacles fixes.",
         "Le résultat est très relaxant, j'espère que ça vous plaira."
       ]

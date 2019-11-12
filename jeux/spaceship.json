@@ -27,7 +27,7 @@
       "title": "Motivations",
       "lines": [
         "La motivation principale est pédagogique : je voulais m'essayer à la manipulation d'une image SVG avec du JavaScript.",
-        "Le choix du support s'est fait sur une vieille envie : je voulais re-créer le jeu <em>Asteroïds</em>. Et c'est après avoir suivi quelques-uns des <em>Coding Challenges</em> de <a href=\"https://www.youtube.com/user/shiffman\" target=\"blank\"> Daniel Shiffman</a> portant sur des moteurs physiques que je me suis lancé dans l'aventure.",
+        "Le choix du support s'est fait sur une vieille envie : je voulais re-créer le jeu <em>Asteroïds</em>. Et c'est après avoir suivi quelques-uns des <em>Coding Challenges</em> de <a href=\"https://www.youtube.com/user/shiffman\" target=\"_blank\"> Daniel Shiffman</a> portant sur des moteurs physiques que je me suis lancé dans l'aventure.",
         "On est encore loin du véritable <em>Asteroïds</em> mais je suis assez content du résultat : la fusée est pilotable avec un peu d'entraînement et graphiquement, j'aime beaucoup le rendu vectoriel du SVG."
       ]
     },

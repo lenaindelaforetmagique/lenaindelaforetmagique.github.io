@@ -1,0 +1,75 @@
+{
+  "type": "Article",
+  "title": "Diagramme de Voronoï",
+  "date": "12/11/2019",
+  "author": "Xavier Morin",
+  "URL": "http://lenaindelaforetmagique.github.io/Voronoi/",
+  "imgURL": "http://lenaindelaforetmagique.github.io/Voronoi/screenshot.gif",
+  "introduction": "<em>Voronoï</em> est un visualisateur de diagrammes de Voronoï.",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Description",
+      "lines": [
+        "Considérons un plan doté de quelques points disctincts ; points que l'on va appeler <em>nœuds</em>.",
+        "Un diagramme de Voronoï est le découpage de ce plan en cellules représentant l'ensemble des points les plus proches de chaque <em>nœud</em>.",
+        "Cette page permet de visualiser et manipuler des diagrammes de Voronoï :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "Cliquez pour créer un nœud,",
+            "Cliquez-glissez pour déplacer un nœud",
+            "Espace pour recommencer"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Motivations et intérêt",
+      "lines": [
+        "J'ai été amené à découvrir les diagrammes de Voronoï par pur intérêt <em>geekesque</em> dans un livre d'algorithmique sur des problèmes de géométrie.",
+        "J'ai fini par tomber sur ces pages et des exemples d'application qui donnent à ce sujet une utilité bien réelle.",
+        "Imaginez vous agriculteur. Sur votre parcelle se trouvent plusieurs sources ; peut alors se poser la question « Lorsque je suis à tel-endroit de mon champ, à quelle source dois-je me rendre pour aller chercher de l'eau et minimiser mes trajets ? ». Le diagramme de Voronoï de ce champ fournirait alors le découpage des surfaces associées à chaque point d'eau. "
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Génération du diagramme",
+      "lines": [
+        "Il existe plusieurs algorithmes permettant de calculer le diagramme de Voronoï d'un nuage de points. ",
+        "L'un d'eux s'appuie sur une propriété intéressante : le diagramme de Voronoï d'un nuage de point est le <em>dual</em> de sa triangulation de Delaunay (<a href=\"?geekeries/maillageDelaunay.json\" target=\"_blank\">voir mon article sur le sujet</a>) :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "Les sommets des triangles sont les <em>nœuds</em>",
+            "Les médiatrices des côtés des triangles dessinent les bords de chaque cellule de Voronoï."
+          ]
+        },
+        "À l'inverse, on peut obtenir la triangulation de Delaunay à partir d'un diagramme de Voronoï : il suffit de relier les nœuds des cellules adjacentes.",
+        "L'algorithme que j'ai mis en place est de mon « invention ». Au départ, chaque nœud a une surface propre égale à l'ensemble du plan. On contrôle toutes les paires de nœuds en calculant leur médiatrice et en découpant leurs surfaces propres le long de cette médiatrice. De proche en proche, la surface propre de chaque nœud est ainsi réduite jusqu'à atteindre sa forme finale."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Technologies mises en œuvre",
+      "lines": [
+        "JavaScript et dessin vectoriel en SVG.",
+        "Évènements clavier, souris et tactiles.",
+        "Testé sur :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "Firefox (v64)",
+            "Chrome (v71)",
+            "Edge (v40)",
+            "iOS Safari (v12)"
+          ]
+        },
+        "Ne fonctionne pas sur Internet Explorer (v11)."
+      ]
+    }
+  ]
+}

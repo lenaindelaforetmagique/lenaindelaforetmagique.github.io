@@ -10,21 +10,42 @@
       "type": "Paragraph",
       "title": "Description",
       "lines": [
-        "Déplacez les noeuds de sorte que les arrêtes ne se croisent pas."
+        "<em>Graph Game</em> est la copie d'un jeu qui a dû être re-développé un bon millier de fois depuis l'invention de l'internet.",
+        "Vous devez déplacer les nœuds du graphe de sorte qu'aucune des arrêtes ne se croisent.",
+        "Les arrêtes représentées en vert sont valides, les arrêtes en rouge doivent être décroisées."
       ]
     },
     {
       "type": "Paragraph",
       "title": "Motivations",
       "lines": [
-        "..."
+        "J'avais envie depuis longtemps de me frotter à l'exercice ; un long trajet en train (une fois n'est pas coutûme) m'a permis de clore le sujet :)."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Un peu de Maths",
+      "lines": [
+        "Ce jeu s'appuie sur <a href=\"https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_graphes\" target=\"_blank\">la théorie des graphes</a> et plus précisément sur les graphes planaires, c'est-à-dire ceux que l'on peut représenter sans qu'aucune arête ne se croise.",
+        "Un exemple courant de graphe non-planaire est l'enigme des trois maisons : vous êtes maître d'œuvre en VRD et vous devez connecter trois maisons à l'électricité, l'eau et le gaz mais pour des raisons de sécurité aucune des conduites ne doit en croiser une autre. Ne cherchez pas trop, cette énigme est impossible à résoudre car le graphe correspondant à cette situation n'est pas planaire.",
+        "Afin d'avoir toujours un graphe planaire à démêler, les graphes que j'ai choisi de générer sont issus d'une triangulation d'un polygone :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "Génération d'un polygone convexe à n-sommets",
+            "Triangulation aléatoire de ce polygone par la <a href=\"https://fr.wikipedia.org/wiki/Triangulation_d%27un_polygone#M%C3%A9thode_des_oreilles\" target=\"_blank\">méthode des oreilles</a>",
+            "Mélange des n-sommets"
+          ]
+        }
       ]
     },
     {
       "type": "Paragraph",
       "title": "Technologies mises en œuvre",
       "lines": [
-        "Langages : HTML, CSS, JavaScript, tout les objets affichés sont des objets du DOM.",
+        "JavaScript et dessin vectoriel en SVG.",
+        "Évènements clavier, souris et tactiles.",
         "Testé sur :",
         {
           "type": "List",

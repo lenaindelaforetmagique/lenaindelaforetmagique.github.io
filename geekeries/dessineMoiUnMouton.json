@@ -10,7 +10,7 @@
       "type": "Paragraph",
       "title": "Description",
       "lines": [
-        "Tracez une forme fermée à la souris (ou à la main si vous êtes sur smartphone) et regardez le programme redessiner la forme avec des <em><a href=\"https://fr.wikipedia.org/wiki/%C3%89picyclo%C3%AFde\" target=\"blank\">épicycloïdes</a></em>."
+        "Tracez une forme fermée à la souris (ou à la main si vous êtes sur smartphone) et regardez le programme redessiner la forme avec des <em><a href=\"https://fr.wikipedia.org/wiki/%C3%89picyclo%C3%AFde\" target=\"_blank\">épicycloïdes</a></em>."
       ]
     },
     {
@@ -27,14 +27,14 @@
       "type": "Paragraph",
       "title": "Inspiration",
       "lines": [
-        "Je dois l'inspiration de ce petit projet à <a href=\"https://www.youtube.com/watch?v=uazPP0ny3XQ\" target=\"blank\">cette vidéo de El Jj</a>. J'ai été, encore une fois, bluffé par la puissance des mathématiques, il fallait que je m'y frotte !"
+        "Je dois l'inspiration de ce petit projet à <a href=\"https://www.youtube.com/watch?v=uazPP0ny3XQ\" target=\"_blank\">cette vidéo de El Jj</a>. J'ai été, encore une fois, bluffé par la puissance des mathématiques, il fallait que je m'y frotte !"
       ]
     },
     {
       "type": "Paragraph",
       "title": "Technologies mises en œuvre",
       "lines": [
-        "Un poil de HTML et CSS, un peu plus de JavaScript avec la librairie <a href=\"https://p5js.org/\" target=\"blank\">p5.js</a>.",
+        "Un poil de HTML et CSS, un peu plus de JavaScript avec la librairie <a href=\"https://p5js.org/\" target=\"_blank\">p5.js</a>.",
         "Testé sur :",
         {
           "type": "List",
