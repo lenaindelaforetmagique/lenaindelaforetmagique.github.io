@@ -1,0 +1,59 @@
+{
+  "type": "Article",
+  "title": "Perlinpinpin",
+  "date": "26/11/2019",
+  "author": "Xavier Morin",
+  "URL": "http://lenaindelaforetmagique.github.io/Perlinpinpin/",
+  "imgURL": "http://lenaindelaforetmagique.github.io/Perlinpinpin/screenshot.png",
+  "introduction": "<em>Perlinpinin</em> est un simulateur de randonnée dans un paysage généré aléatoirement.",
+  "content": [{
+      "type": "Paragraph",
+      "title": "Description",
+      "lines": [{
+          "type": "List",
+          "class": "",
+          "items": [
+            "pour la version sur ordinateur, avec clavier/souris, <a href=\"http://lenaindelaforetmagique.github.io/Perlinpinpin/\" target=\"_blank\">cliquez-ici</a> ;",
+            "pour la version mobile/tablette, <a href=\"http://lenaindelaforetmagique.github.io/Perlinpinpin/aero\" target=\"_blank\">cliquez-ici</a>."
+          ]
+        },
+        "Pour vous déplacer : pseudo-flèches directionnelles SEDF."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Génération du sol aléatoire",
+      "lines": [
+        "Bruit de Perlin, infos à venir..."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Affichage de la vue",
+      "lines": [
+        "à venir..."
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "title": "Technologies mises en œuvre",
+      "lines": [
+        "JavaScript et dessin vectoriel en SVG.",
+        "Affichage 3D, occultations, éclairage des faces, raffinement du maillage : tout de mon cru.",
+        "Évènements clavier, souris.",
+        "Testé sur :",
+        {
+          "type": "List",
+          "class": "",
+          "items": [
+            "Firefox (v64)",
+            "Chrome (v71)",
+            "Edge (v40)",
+            "iOS Safari (v12)"
+          ]
+        },
+        "Ne fonctionne pas sur Internet Explorer (v11)."
+      ]
+    }
+  ]
+}
