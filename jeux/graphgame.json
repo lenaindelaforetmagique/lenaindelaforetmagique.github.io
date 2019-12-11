@@ -12,7 +12,8 @@
       "lines": [
         "<em>Graph Game</em> est la copie d'un jeu qui a dû être re-développé un bon millier de fois depuis l'invention de l'internet.",
         "Vous devez déplacer les nœuds du graphe de sorte qu'aucune des arrêtes ne se croisent.",
-        "Les arrêtes représentées en vert sont valides, les arrêtes en rouge doivent être décroisées."
+        "Les arrêtes représentées en vert sont valides, les arrêtes en rouge doivent être décroisées.",
+        "Théoriquement, le jeu fonctionne sur tous les supports dotés d'un navigateur digne de ce nom, mais il faut être honnête, ce n'est vraiment jouable que sur ordinateur avec une souris..."
       ]
     },
     {
@@ -42,6 +43,15 @@
     },
     {
       "type": "Paragraph",
+      "title": "Solveur",
+      "lines": [
+        "<a href=\"http://lenaindelaforetmagique.github.io/GraphGame/?cheat=1\" target=\"_blank\"><img class=\"vignette\" src=\"http://lenaindelaforetmagique.github.io/GraphGame/anim_solve.gif\" title=\"Mode triche activé\"></a>",
+        "J'ai doté ce jeu d'un mode « triche » qui permet, par l'ajout d'un moteur physique, de résoudre automatiquement les niveaux. Ce <em>solveur</em> est accessible avec une query-string : <a href=\"http://lenaindelaforetmagique.github.io/GraphGame/?cheat=1\" target=\"_blank\">?cheat=1</a>.",
+        "Chaque nœud exerce sur ses voisins une force de répulsion, chaque arête exerce une force de ressort entre les nœuds connectés. La combinaison des deux permet aux nœuds de s'agencer dans une configuration (presque) résolue."
+      ]
+    },
+    {
+      "type": "Paragraph",
       "title": "Technologies mises en œuvre",
       "lines": [
         "JavaScript et dessin vectoriel en SVG.",
@@ -54,7 +64,7 @@
             "Firefox (v64)",
             "Chrome (v71)",
             "Edge (v40)",
-            "iOS Safari (v12)"
+            "iOS Safari (v12) (fonctionne sur mobile, mais pas franchement pensé pour...)"
           ]
         },
         "Ne fonctionne pas sur Internet Explorer (v11)."
