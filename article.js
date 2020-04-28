@@ -96,7 +96,7 @@ class Article {
     // this.dom.appendChild(author);
     let endLine = document.createElement('p');
     let a_ = document.createElement('a');
-    a_.setAttribute("href", '?' + this.source);
+    a_.setAttribute("href", '?article=' + this.source);
     a_.innerHTML = "<img src=\"img\\link-logo.svg\" title=\"Lien vers cet article\"  onmouseover=\"this.src='img/link-logo-gray.svg';\" onmouseout=\"this.src='img/link-logo.svg';\" >";
     endLine.appendChild(a_);
     endLine.setAttribute("class", "foot");
